@@ -1,0 +1,65 @@
+\beamer@endinputifotherversion {3.10pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Introducao}{3}{Introducao}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\slideentry {1}{0}{3}{3/5}{}{0}}
+\headcommand {\beamer@framepages {3}{5}}
+\headcommand {\slideentry {1}{0}{4}{6/6}{}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {1}{0}{5}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\sectionentry {2}{Conceitos Gerais de Base de Dados}{8}{Conceitos Gerais de Base de Dados}{0}}
+\headcommand {\beamer@sectionpages {3}{7}}
+\headcommand {\beamer@subsectionpages {3}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{BD como Modelos de Realidade}}\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\slideentry {2}{1}{1}{8/8}{BD como Modelos de Realidade}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {2}{1}{2}{9/11}{BD como Modelos de Realidade}{0}}
+\headcommand {\beamer@framepages {9}{11}}
+\headcommand {\slideentry {2}{1}{3}{12/12}{BD como Modelos de Realidade}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {2}{1}{4}{13/13}{BD como Modelos de Realidade}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{14}{BD Relacionais}}\headcommand {\beamer@subsectionpages {8}{13}}
+\headcommand {\slideentry {2}{2}{1}{14/19}{BD Relacionais}{0}}
+\headcommand {\beamer@framepages {14}{19}}
+\headcommand {\slideentry {2}{2}{2}{20/20}{BD Relacionais}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {2}{2}{3}{21/21}{BD Relacionais}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {2}{2}{4}{22/24}{BD Relacionais}{0}}
+\headcommand {\beamer@framepages {22}{24}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{25}{SQL}}\headcommand {\beamer@subsectionpages {14}{24}}
+\headcommand {\slideentry {2}{3}{1}{25/28}{SQL}{0}}
+\headcommand {\beamer@framepages {25}{28}}
+\headcommand {\slideentry {2}{3}{2}{29/29}{SQL}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {2}{3}{3}{30/30}{SQL}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{31}{Sistemas de Gestao de Base de Dados}}\headcommand {\beamer@subsectionpages {25}{30}}
+\headcommand {\slideentry {2}{4}{1}{31/38}{Sistemas de Gestao de Base de Dados}{0}}
+\headcommand {\beamer@framepages {31}{38}}
+\headcommand {\sectionentry {3}{Base de Dados Espaciais}{39}{Base de Dados Espaciais}{0}}
+\headcommand {\beamer@sectionpages {8}{38}}
+\headcommand {\beamer@subsectionpages {31}{38}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{39}{O que sao as BD Espaciais}}\headcommand {\beamer@subsectionpages {39}{38}}
+\headcommand {\slideentry {3}{1}{1}{39/39}{O que sao as BD Espaciais}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{40}{BD e SIG}}\headcommand {\beamer@subsectionpages {39}{39}}
+\headcommand {\slideentry {3}{2}{1}{40/40}{BD e SIG}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{41}{Software Livre e de Codigo Aberto (FOSS)}}\headcommand {\beamer@subsectionpages {40}{40}}
+\headcommand {\slideentry {3}{3}{1}{41/41}{Software Livre e de Codigo Aberto (FOSS)}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{42}{Exemplos de SGBD com Extensoes Espaciais}}\headcommand {\beamer@subsectionpages {41}{41}}
+\headcommand {\slideentry {3}{4}{1}{42/42}{Exemplos de SGBD com Extensoes Espaciais}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\beamer@partpages {1}{42}}
+\headcommand {\beamer@subsectionpages {42}{42}}
+\headcommand {\beamer@sectionpages {39}{42}}
+\headcommand {\beamer@documentpages {42}}
+\headcommand {\def \inserttotalframenumber {21}}

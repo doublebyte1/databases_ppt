@@ -1,0 +1,37 @@
+\frametitle {SQL (+)}
+\lstset{language=SQL}
+\tiny{
+\begin{lstlisting}
+SELECT Ref_Vessels.Name
+FROM         dbo.FR_ALS2Vessel INNER JOIN
+dbo.Ref_Vessels ON dbo.FR_ALS2Vessel.vesselID = dbo.Ref_Vessels.VesselID
+WHERE     (dbo.FR_ALS2Vessel.id_sub_frame =
+(SELECT     ID
+FROM          dbo.FR_Sub_Frame
+WHERE      (Type =
+(SELECT     ID
+FROM          dbo.Ref_Frame
+WHERE      (Name = 'root'))) AND (id_frame = 8)))
+AND (dbo.FR_ALS2Vessel.id_abstract_landingsite =
+(SELECT     id_abstract_LandingSite
+  FROM          dbo.Sampled_Cell
+  WHERE      (ID = 53)))
+AND (dbo.FR_ALS2Vessel.vesselID NOT IN
+(SELECT     VesselID
+FROM          dbo.Changes_Temp_Vessel
+WHERE      (id_cell = 53) AND (To_LS =
+(SELECT     ID
+  FROM          dbo.Ref_Abstract_LandingSite
+  WHERE      (Name = 'outside')))))
+UNION
+SELECT Ref_Vessels.Name
+FROM         dbo.FR_ALS2Vessel INNER JOIN
+dbo.Ref_Vessels ON dbo.FR_ALS2Vessel.vesselID = dbo.Ref_Vessels.VesselID
+WHERE     (dbo.Ref_Vessels.VesselID IN
+(SELECT     VesselID
+FROM          dbo.Changes_Temp_Vessel
+WHERE      (id_cell = 53) AND (To_LS =
+(SELECT id_abstract_LandingSite FROM Sampled_Cell WHERE ID=53)
+)))
+\end{lstlisting}
+}
