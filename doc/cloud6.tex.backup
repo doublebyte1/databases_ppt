@@ -12,11 +12,29 @@
 
 \newcommand{\soooo}{H$_2$SO$_4$}
 
+%fdl stuff
+\usepackage{hyperref}
+\hypersetup{colorlinks, 
+           citecolor=black,
+           filecolor=black,
+           linkcolor=black,
+           urlcolor=black,
+           bookmarksopen=true,
+           pdftex}
+
+\hfuzz = .6pt % avoid black boxes
+
+
 \begin{document}
 \setbeamertemplate{footline}[page number]
 \setbeamertemplate{navigation symbols}{}
 \begin{frame}
-\titlepage
+%\titlepage
+\begin{titlepage}
+%\centering
+\includegraphics[width=.25\textwidth]{spatialite.png}
+
+\end{titlepage}
 \end{frame} 
 
 \begin{frame}
@@ -28,19 +46,39 @@
 \section{Introducao} 
 \begin{frame}
 \frametitle{Apresentacao}
+\begin{columns}
+  \begin{column}{7cm}
+    \begin{itemize}
+      \item<1-> PhD CASA, UCL: "An Agent-based Approach to Epidemics through GIS"
+      \item<2-> membro do grupo de ``Modelacao Geografica, Cidades e Ordenamento Do Territorio'', e-GEO
+      \item<3-> + 2 anos na FAO-UN, como consultora de diversos aspectos relacionados com Software (programacao, Bases de Dados e SIG)
+      \end{itemize}
+  \end{column}
+  \begin{column}{10cm}
+    \includegraphics[scale=0.4]{input1.png}
+  \end{column}  
+\end{columns}
 \end{frame}
 
 
 \begin{frame}
 \frametitle{Motivacao para Este Talk/Workshop}
+    \begin{itemize}
+      \item<2-> Partilha de conhecimentos, que poderao ser relevantes para pessoas que trabalhem com ``tecnologias espaciais``
+      \item<3-> Contributo para grupo o de ``Modelacao Geografica, Cidades e Ordenamento Do Territorio''
+      \item<4-> Pretexto para reunir pessoas com interesse nesta area (``social networking'')
+      \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{O que este Talk nao e...}
+    \begin{itemize}
+      \item<2-> Nao e uma introducao ao SQL
+      \item<3-> Nao e um tutorial de SpatiaLite
+      \end{itemize}
 \end{frame}
 
-\section{Conceitos de Base de Dados}
-
+\section{Conceitos Gerais de Base de Dados}
 \subsection{BD como Modelos de Realidade}
 \begin{frame}
 \frametitle{O que sao Bases de Dados...?}
@@ -87,6 +125,7 @@ Os computadores/Internet geram um volume de dados muito grande e necessitamos de
 \textit{Cloud Computing; Data Mining; Grid Computing; Data Warehouses; Big Data;}
 \end{frame}
 
+\subsection{BD Relacionais}
 \begin{frame}
 \frametitle{BD Relacionais}
 O modelo relacional foi formulado por Edgar F. Codd (1969/1970?).\\
@@ -133,6 +172,7 @@ O objectivo do modelo relacional e possibilitar um metodo declarativo para espec
   \end{enumerate}
 \end{frame}
 
+\subsection{SQL}
 \begin{frame}
 \frametitle{SQL}
 A maior parte das implementacoes do modelo relacional usam o \textbf{SQL} como linguagem de definicao de dados e de \textit{queries}.
@@ -154,9 +194,9 @@ DROP DATABASE MYDB;
 \end{lstlisting}
 \end{frame}
 
-
 \begin{frame}[fragile]
 \frametitle{SQL (+)}
+\lstset{language=SQL}
 \tiny{
 \begin{lstlisting}
 SELECT Ref_Vessels.Name	
@@ -194,56 +234,340 @@ WHERE      (id_cell = 53) AND (To_LS =
 }
 \end{frame}
 
+\subsection{Sistemas de Gestao de Base de Dados}
 \begin{frame}
 \frametitle{SGBD}
-A database management system (DBMS) is the software which controls the storage, retrieval, deletion, security, and integrity of data within a database.
-\end{frame}
-
-
-\subsection{BD e SIG}
-\frametitle{The CIGAR}
-\begin{frame}
-The CIGAR\\
-\textbf{C}orona \textbf{I}on \textbf{G}enerator for \textbf{A}erosol \textbf{R}esearch
-\begin{figure}
-%\includegraphics[scale=0.3,page=5]{Guantanamera-cigar-2.jpg} 
-\end{figure}
-\end{frame}
-
-\section{SGBD com Extensoes Espaciais} 
-\subsection{O que sao as BD Espaciais}
-\begin{frame}
-\frametitle{[H2SO4] Depletion/Evaporation}
-\includegraphics<1>[scale=0.35,page=1]{runs_for_talk.pdf}
-\includegraphics<2>[scale=0.35,page=3]{runs_for_talk.pdf}
-\includegraphics<3>[scale=0.35,page=2]{runs_for_talk.pdf} 
-\end{frame}
-
-
-\begin{frame}
-\frametitle{[H2SO4] Depletion/Evaporation}
-[H2SO4] Depletion/Evaporation
+Um \textbf{S}istema de \textbf{G}estao De \textbf{B}ase de \textbf{D}ados e o software que controla o armazenamento,
+recuperacao, remocao, seguranca e integridade dos dados dentro da BD.\\
+Algumas vantagens dos SGBDR:
 \begin{itemize}
-  \item It appears that sulphuric acid comes from droplets when they evaporate!
+\item<2-> Reduzir a redundancia;%Bd centralizada; utilizacao de chaves estrangeiras
+\item<3-> Independencia dos dados;%se a BD estiver separada da aplicacao, a aplicacao nao necessita de saber nada sobre o armazenamento interno, manipulacao dos dados
+\item<4-> Assegurar a integridade dos dados;%ao activar certos mecanismos (por exemplo chaves primarias) a BD vai assegurar-se de que nao existem registos duplicados
+\item<5-> Partilha de dados;%varias aplicacoes podem partilhar a mm BD
+\item<7-> Recuperacao a partir de uma falha;%multiplos updates podem ser agrupados numa unica transaccao logica; o update fisico segue a compleicao da transaccao logica; desta forma, assegura-se que numa falha, a BD nao vai ficar num estado inconsistente
+\item<8-> Seguranca e privacidade;%implementa sistema de utilizadores e roles, protegidos com passwords, permitindo varios niveis de acesso aos dados
 \end{itemize}
 \end{frame}
 
-\subsection{Software Livre e de Codigo Aberto (FOSS)}
+\section{Base de Dados Espaciais}
+
+\subsection{O que sao as BD Espaciais} 
 \begin{frame}
-\frametitle{[H2SO4] Depletion/Evaporation}
-\includegraphics<1>[scale=0.35,page=1]{runs_for_talk.pdf}
-\includegraphics<2>[scale=0.35,page=3]{runs_for_talk.pdf}
-\includegraphics<3>[scale=0.35,page=2]{runs_for_talk.pdf} 
+\frametitle{O que sao as BD Espaciais}
+\begin{columns}
+  \begin{column}{7cm}
+    \begin{itemize}
+      \item<1-> Se as BD sao um conjunto integrado de informacao sobre um determinado tema, as BD espaciais contem dados \textbf{espaciais}, sobre um determinado tema e numa determinada \textbf{dimensao espacial}.
+      \item<2-> BD espaciais != BD Geograficas
+      \end{itemize}
+  \end{column}
+  \begin{column}{10cm}
+    \includegraphics[scale=0.4]{wired.png}
+  \end{column}  
+\end{columns}
 \end{frame}
 
-\subsection{Exemplos de SGBD com Extensoes Espaciais}
+\subsection{BD e SIG} 
 \begin{frame}
-\frametitle{[H2SO4] Depletion/Evaporation}
-\includegraphics<1>[scale=0.35,page=1]{runs_for_talk.pdf}
-\includegraphics<2>[scale=0.35,page=3]{runs_for_talk.pdf}
-\includegraphics<3>[scale=0.35,page=2]{runs_for_talk.pdf} 
+\frametitle{BD e SIG}
+Historicamente os SIG sempre incluiram BD (modelos de dados).
+    \begin{itemize}
+      \item<2-> A primeira geracao de SIG tinha representacoes de dados em sistemas simples de ficheiros (e.g.: Shapefile).      
+      \includegraphics[scale=0.2]{att_table.png}
+      \end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{BD e SIG (+)}
+    \begin{itemize}
+      \item<1-> Com a generalizacao dos SGBDR, algumas casas de SIG (e.g.: ESRI, Mapinfo) comecaram a desenvolver produtos de \textit{midleware}, que usavam os SGBDR como repositorios de dados (segunda geracao).
+      %beneficiavam das vantagens dos SGBD e a inteligencia espacial estava no midleware
+      \item<2-> A terceira geracao de SIG nasce da motivacao de aproveitar a 100\% as capacidades dos SGBDR e de criar uma certa independencia de APIs proprietarias.
+      Isto foi alcancado \textit{movendo} a gestao primaria dos dados para a BD e \textit{expandindo} a sintaxe do SQL.
+      \end{itemize}
+\end{frame}
+
+\subsection{Extensoes Espaciais}
+\begin{frame}
+\frametitle{SGBD com Extensao Espacial}
+Uma BD espacial e uma BD que \textit{compreende} informacao espacial, em adicao a outros tipos de informacao (numerico, texto, binario, etc).
+Podemos considera-a como uma \textit{extensao} de uma BD \textit{tradicional}, adicionando a capacidade de armazenamento de
+\textit{features} geometricas (e.g.: pontos, linhas, poligons) e uma serie de operacoes que podemos processar sobre estas \textit{features} 
+(e.g.: \textit{buffering}, interseccao). De facto muitas BD espaciais sao distribuidas como extensoes de BD relacionais existentes.
+    \begin{itemize}
+      \item<2-> PostGIS \textit{extende} o PostGres SQL;
+      \item<2-> MySQL Spatial \textit{extende} o MySQL;
+      \item<2-> SQL Spatial \textit{extende} o SQL Server;
+      \item<2-> Oracle Spatial \textit{extende} o Oracle;
+      \item<2-> Spatialite \textit{extende} o SQLite;
+      \item<2-> ... 
+      \end{itemize}  
+\end{frame}
+
+\begin{frame}
+\frametitle{Pesquisas Espaciais}
+\textbf{Indices Espaciais} sao indices que optimizam as pesquisas espaciais (\textit{e.g.}: Quadtree).
+%organizacao que se dedica a regular os standards geoespaciais e de localizacao
+O \textbf{Open Geospatial Consortium} (OGC) suporta os seguintes tipos de pesquisas espaciais:
+    \begin{itemize}
+      \item<2-> \textbf{Medicoes Espaciais} (\textit{e.g.}: encontrar a distancia entre dois pontos, area de um poligono, etc);
+      \item<3-> \textbf{Funcoes Espaciais}: Modificar \textit{features} existentes para criar novas (\textit{e.g.}: \textit{buffer}, interseccao, etc);
+      \item<4-> \textbf{Predicados Espaciais}: permitir pesquisas de resultado booleano (\textit{e.g.}: \textit{existe um campo de petroleo dentro de uma distancia de uma area protegida que pretendemos implementar?});
+      \item<5-> \textbf{Construtores}: criar novas \textit{features} com uma expressao de SQL (\textit{e.g.}: criar linhas pela especificacao dos vertices);
+      \item<6-> \textbf{Funcoes de Observacao}: pesquisas que retornam informacao especifica sobre uma \textit{feature} (\textit{e.g.}: o centroide de um poligono);
+    \end{itemize}  
+\end{frame}
+
+\begin{frame}
+\frametitle{Porque usar SGBD com extensoes Espaciais?}
+Apresentam todas as vantagens de um SGBD \textit{tradicional}:\\
+    \begin{itemize}
+      \item<2-> Eficiencia de armazenamento;
+      \item<2-> Funcionalidade de pesquisa;
+      \item<2-> acesso concorrente;
+      \item<2-> modelo de seguranca;
+      \item<2-> ...      
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Porque usar SGBD com extensoes Espaciais? (+)}
+Hoje em dia a maior parte dos software de SIG interagem directamente com as BD espaciais.\\
+  \begin{figure}[!ht]%[htbp]
+    \begin{center}
+    \includegraphics[width=0.5\textwidth ]{ices.png}
+      \caption[\tiny{O website interactivo do ICES usa uma BD espacial.}]{\tiny{O website interactivo do ICES usa uma BD espacial.}}
+      \label{frame} % so that one can \ref it elsewhere   
+    \end{center}
+  \end{figure}    
+
+    \begin{itemize}
+      \item<2-> Nao ha nenhum motivo para nao utilizar os SGBD com extensoes espaciais como sistema de armazenamento e gestao da informacao geografica!
+    \end{itemize}  
+\end{frame}
+
+\begin{frame}
+\frametitle{\huge{BREAK?}}
+  \begin{figure}
+    \begin{center}
+	\includegraphics[width=0.5\textwidth ]{coffee_talk.jpg}
+    \end{center}
+  \end{figure}    
+\end{frame}
+
+\section{Um Exemplo}
+\subsection{https://sqlite.org/}
+\begin{frame}
+\frametitle{SQLite e SpatiaLite}
+\textbf{SpatiaLite} e a extensao espacial do \textbf{SQLite}.\\
+O SQLite e o \textit{engine} de BD mais utilizado no mundo. O codigo esta no dominio publico.\\
+\begin{columns}
+  \begin{column}{7cm}
+    \begin{itemize}
+      \item<2-> auto-contido;
+      \item<3-> sem servidor;
+      \item<4-> sem configuracao;
+      \item<5-> transaccional;      
+    \end{itemize}    
+  \end{column}
+  \begin{column}{10cm}
+    \includegraphics[scale=0.3]{sqlite.png}
+    \includegraphics[scale=0.1]{spatialite.png}       
+  \end{column}  
+\end{columns} 
+ %   \url{https://sqlite.org/}  
+\end{frame}
+
+%TODO slide sobre spatialite e opensource
+\subsection{SpatiaLite}
+\begin{frame}
+\frametitle{LibspatiaLite}
+O SpatiaLite e uma biblioteca \textit{livre e de codigo aberto}, simples, e \textit{leve}.\\
+Algumas vantagens:
+    \begin{itemize}
+      \item<2-> A BD completa cabe num ficheiro (sem limites de tamanho);
+      \item<3-> O ficheiro de BD e portavel para diferentes Sistemas Operativos;
+      \item<4-> Nao requer instalacao/configuracao;
+      \item<5-> Implementacao standard de SQL (quase completa SQL-92).      
+      \item<6-> Modelo de tres licencas (uma para cada gosto!).      
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{FOSS}
+A definicao de Software livre foi publicada pela \textit{Free Software Foundation} (FSF) em 1985, como sendo software que respeita quatro liberdades fundamentais:
+\begin{columns}
+  \begin{column}{7cm}
+    \begin{itemize}
+      \item<2-> Liberdade de executar o programa, com qualquer objectivo;
+      \item<3-> Liberdade de estudar o codigo e modifica-lo, se assim o desejar;
+      \item<4-> Liberdade de redistribuir copias;
+      \item<5-> Liberdade de modificar o programa, e distribuir a versao modificada;      
+    \end{itemize}    
+  \end{column}
+  %as liberdades 2 e 5 fazem com que um programa livre tenha de ser necessariamente open source
+  \begin{column}{10cm}
+  %\begin{figure}
+    \includegraphics[scale=0.3]{stallman.jpg}   
+    %\caption{Richard Stallman}    
+  %\end{figure}
+  \end{column}  
+\end{columns} 
+\end{frame}
+
+\subsection{http://www.gaia-gis.it/gaia-sins/}
+\begin{frame}
+\frametitle{Spatial Is Not Special}
+O SpatiaLite e um dos projectos {Gaia-SINS}
+    \begin{itemize}
+      \item<2-> \textbf{ReadOSM}: biblioteca para extrair dados do formato OpenStreet Map;
+      \item<3-> \textbf{Spatialite-tools}: coleccao de ferramentas de linha de comando (CLI) que suportam o SpatiaLite (\textit{e.g.}:cliente, import/export)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Spatial Is Not Special (+)}
+    \begin{itemize}
+      \item<1-> \textbf{Spatialite-gui}: \textit{interface} grafico para utilizar o SpatiaLite;
+    \end{itemize}
+  \includegraphics[scale=0.4]{spatialite_gui.png}        
+\end{frame}
+
+\begin{frame}
+\frametitle{Spatial Is Not Special (+)}
+    \begin{itemize}
+      \item<1-> \textbf{Librasterlite}: biblioteca que extende o suporte do SpatiaLite a dados Raster;
+    \end{itemize}
+  \includegraphics[scale=0.4]{rasterlite.png}        
+\end{frame}
+
+\begin{frame}
+\frametitle{Spatial Is Not Special (+)}
+    \begin{itemize}
+      \item<1-> \textbf{Spatialite-gis}: SIG minimal, construido sobre o SpatiaLite e o RasterLite;
+    \end{itemize}
+  \includegraphics[scale=0.4]{spatialite_gis.png}        
+\end{frame}
+
+\subsection{Demo}
+\begin{frame}
+\frametitle{Solucionando um problema Geografico}
+\small{
+\textit{Use Case}: Temos uma serie de portos de pesca, na area do Benin, e uma serie de mercados, onde potencialmente se podem vender as capturas.
+O nosso objectivo e calcular uma matriz de distancias, para saber que mercados distam mais proximos de cada porto. Os portos e os mercados estao armazenados em Shapefiles (WGS84).
+}
+\includegraphics[scale=0.2]{distances1.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Importar as Shapefiles}
+O Spatialite\_gui tem um interface amigavel para importar Shapefiles.\\
+\includegraphics[scale=0.3]{distance2.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Importar as Shapefiles (+)}
+A definicao do SRID e muito importante.\\
+\includegraphics[scale=0.5]{distance3.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Analise do Problema}
+Podiamos calcular as distancias em graus, mas e mais relevante faze-lo num sistema com unidades lineares (\textit{e.g.: metros}).\\
+\vspace{1cm}
+\pause
+\huge \textit{Como faze-lo sem reprojectar o layer?}
+\end{frame}
+
+\begin{frame}
+\frametitle{Adicionar uma Coluna Geometrica}
+Nao ha nada que nos impeca de ter duas colunas contendo geometria, em diferentes CRS!\\
+\includegraphics[scale=0.3]{distance5.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textit{Clonar} a Geometria}
+Ao mesmo tempo que \textit{clonamos} a geometria, podemos reprojecta-la para \textit{Google Mercator}.\\
+\includegraphics[scale=0.3]{distance6.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Confirmar o Resultado}
+Podemos confirmar o SRID e a definicao da geometria em texto, com uma \textit{query} simples.\\
+\includegraphics[scale=0.3]{distance7.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Criando a Matriz de Distancias}
+Depois de criar a coluna com a geometria reprojectada nos dois layers, podemos proceder ao calculo das distancias lineares.
+A matriz de distancias e criada com uma \textit{query} que usa a funcao Distance().\\
+\includegraphics[scale=0.2]{distance8.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Guardar os resultados}
+Para tornar os resultados permanentes, podemos exporta-los para um ficheiro de texto (.csv); ou ainda criar uma \textit{View} ou uma tabela a partir desta \textit{query}.\\
+\includegraphics[scale=0.3]{distance11.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textit{Layers} no Spatialite\_gis}
+Visualizando os layers criados no Spatialite\_gis.\\
+\includegraphics[scale=0.3]{distance13.png}
+%O QGIS ve as tabelas como dois layers!!! suporte directo em QGIS no core
+\end{frame}
+
+\section{NoSQL}
+\begin{frame}
+\frametitle{NoSQL}
+O modelo relacional e um \textit{top-down} approach, que se baseia em ideias \textit{fortes} sobre os dados (\textit{schema}). A realidade muitas vezes e outra...\\
+\pause
+No modelo NoSQL a \textbf{habilidade de armazenar e recuperar grandes quantidades de dados e mais importante do que as relacoes entre os elementos}. Algumas vantagens:
+\begin{columns}
+  \begin{column}{7cm}
+    \begin{itemize}
+      \item<1-> Adaptam-se bem ao modelo orientado para o objecto (\textit{e.g.}: trees).
+      \item<2-> Sao desenhados como sistemas distribuidos, e por isso \textit{crescem} muito bem. %nao precisamos de incrementar o hardware, mas apenas adicionar mais nos
+      \item<3-> + 2 anos na FAO-UN, como consultora de diversos aspectos relacionados com Software (programacao, Bases de Dados e SIG)
+      \end{itemize}
+  \end{column}
+  \begin{column}{10cm}
+  \includegraphics[scale=0.3]{nosql.jpeg}
+  \end{column}  
+\end{columns}
+\end{frame}
+
+\section{+}
+\begin{frame}
+\frametitle{+}
+
+\begin{itemize}
+\item<1-> \url{http://mgcotunl.wordpress.com/}
+\item<1-> Revista da ACCU (Associacao de Programadores de C e C++): \url{http://accu.org/}
+\item<1-> \url{http://doublebyte.net}
+\item<1-> Esta apresentacao esta publicada com licenca GNU FDL
+\end{itemize}
+\pause
+\vspace{1cm}
+\huge
+Obrigada pela vossa atencao!
+\end{frame}
+
+\section{Licenca}
+\begin{frame}
+\frametitle{Licenca}
+Copyright c 2013 Joana Simoes. Permission is granted
+to copy, distribute and/or modify this document under
+the terms of the GNU Free Documentation License,
+Version 1.3 or any later version published by the Free
+Software Foundation; with no Invariant Sections, no
+Front-Cover Texts, and no Back-Cover Texts. A copy of
+the license is included in the section entitled \textit{GNU Free
+Documentation License}.
+\end{frame}
+
+\include{fdl-1.3}
 
 \end{document}
 \begin{frame}
