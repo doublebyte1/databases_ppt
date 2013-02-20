@@ -31,21 +31,20 @@
 \begin{frame}
 %\titlepage
 \begin{titlepage}
-%\centering
-\includegraphics[width=.25\textwidth]{spatialite.png}
-
+\centering
+  \includegraphics[width=.25\textwidth]{spatialite.png}
 \end{titlepage}
 \end{frame} 
 
 \begin{frame}
 \frametitle{Table of contents}
-\tableofcontents
+\tiny{
+\tableofcontents}
 \end{frame}
  
-
-\section{Introducao} 
+\section{Introdu\c{c}\~{a}o} 
 \begin{frame}
-\frametitle{Apresentacao}
+\frametitle{Apresenta\c{c}\~{a}o}
 \begin{columns}
   \begin{column}{7cm}
     \begin{itemize}
@@ -65,7 +64,7 @@
 \frametitle{Motivacao para Este Talk/Workshop}
     \begin{itemize}
       \item<2-> Partilha de conhecimentos, que poderao ser relevantes para pessoas que trabalhem com ``tecnologias espaciais``
-      \item<3-> Contributo para grupo o de ``Modelacao Geografica, Cidades e Ordenamento Do Territorio''
+      \item<3-> Contributo para grupo o de ``Modelacao Geogr\'{a}fica, Cidades e Ordenamento Do Territorio''
       \item<4-> Pretexto para reunir pessoas com interesse nesta area (``social networking'')
       \end{itemize}
 \end{frame}
@@ -187,7 +186,7 @@ A maior parte das implementacoes do modelo relacional usam o \textbf{SQL} como l
 \frametitle{SQL (+)}
 \lstset{language=SQL}
 \begin{lstlisting}
-SELECT * FROM STUDENTS WHERE YR 2012;
+SELECT * FROM STUDENTS WHERE YR >2012;
 SELECT (1+1);
 ALTER TABLE MyTable ADD myField4 NUMBER(3);
 DROP DATABASE MYDB; 
@@ -234,17 +233,17 @@ WHERE      (id_cell = 53) AND (To_LS =
 }
 \end{frame}
 
-\subsection{Sistemas de Gestao de Base de Dados}
+\subsection{Sistemas de Gest\~{a}o de Base de Dados}
 \begin{frame}
 \frametitle{SGBD}
 Um \textbf{S}istema de \textbf{G}estao De \textbf{B}ase de \textbf{D}ados e o software que controla o armazenamento,
 recuperacao, remocao, seguranca e integridade dos dados dentro da BD.\\
 Algumas vantagens dos SGBDR:
 \begin{itemize}
-\item<2-> Reduzir a redundancia;%Bd centralizada; utilizacao de chaves estrangeiras
+\item<2-> Reduzir a redundancia;%Bd centralizada; utilizacao de chaves estrangeiras; relacionado com: consistencia
 \item<3-> Independencia dos dados;%se a BD estiver separada da aplicacao, a aplicacao nao necessita de saber nada sobre o armazenamento interno, manipulacao dos dados
 \item<4-> Assegurar a integridade dos dados;%ao activar certos mecanismos (por exemplo chaves primarias) a BD vai assegurar-se de que nao existem registos duplicados
-\item<5-> Partilha de dados;%varias aplicacoes podem partilhar a mm BD
+\item<5-> Partilha de dados;%varias aplicacoes podem partilhar a mm BD; relacionado com: CONCORRENCIA
 \item<7-> Recuperacao a partir de uma falha;%multiplos updates podem ser agrupados numa unica transaccao logica; o update fisico segue a compleicao da transaccao logica; desta forma, assegura-se que numa falha, a BD nao vai ficar num estado inconsistente
 \item<8-> Seguranca e privacidade;%implementa sistema de utilizadores e roles, protegidos com passwords, permitindo varios niveis de acesso aos dados
 \end{itemize}
@@ -252,7 +251,7 @@ Algumas vantagens dos SGBDR:
 
 \section{Base de Dados Espaciais}
 
-\subsection{O que sao as BD Espaciais} 
+\subsection{O que s\~{a}o as BD Espaciais} 
 \begin{frame}
 \frametitle{O que sao as BD Espaciais}
 \begin{columns}
@@ -273,7 +272,7 @@ Algumas vantagens dos SGBDR:
 \frametitle{BD e SIG}
 Historicamente os SIG sempre incluiram BD (modelos de dados).
     \begin{itemize}
-      \item<2-> A primeira geracao de SIG tinha representacoes de dados em sistemas simples de ficheiros (e.g.: Shapefile).      
+      \item<2-> A primeira geracao de SIG tinha representacoes de dados em ficheiros fisicos (e.g.: Shapefile).      
       \includegraphics[scale=0.2]{att_table.png}
       \end{itemize}
 \end{frame}
@@ -281,14 +280,14 @@ Historicamente os SIG sempre incluiram BD (modelos de dados).
 \begin{frame}
 \frametitle{BD e SIG (+)}
     \begin{itemize}
-      \item<1-> Com a generalizacao dos SGBDR, algumas casas de SIG (e.g.: ESRI, Mapinfo) comecaram a desenvolver produtos de \textit{midleware}, que usavam os SGBDR como repositorios de dados (segunda geracao).
+      \item<1-> Com a generalizacao dos SGBDR, alguns fabricantes de SIG Desktop (e.g.: ESRI, Mapinfo) comecaram a desenvolver produtos de \textit{midleware}, que usavam os SGBDR como repositorios de dados (segunda geracao).
       %beneficiavam das vantagens dos SGBD e a inteligencia espacial estava no midleware
-      \item<2-> A terceira geracao de SIG nasce da motivacao de aproveitar a 100\% as capacidades dos SGBDR e de criar uma certa independencia de APIs proprietarias.
+      \item<2-> A ``terceira geracao de SIG'' nasce da motivacao de aproveitar a 100\% as capacidades dos SGBDR e de criar uma certa independencia de APIs proprietarias.
       Isto foi alcancado \textit{movendo} a gestao primaria dos dados para a BD e \textit{expandindo} a sintaxe do SQL.
       \end{itemize}
 \end{frame}
 
-\subsection{Extensoes Espaciais}
+\subsection{Extens\~{o}es Espaciais}
 \begin{frame}
 \frametitle{SGBD com Extensao Espacial}
 Uma BD espacial e uma BD que \textit{compreende} informacao espacial, em adicao a outros tipos de informacao (numerico, texto, binario, etc).
@@ -336,8 +335,8 @@ Apresentam todas as vantagens de um SGBD \textit{tradicional}:\\
 Hoje em dia a maior parte dos software de SIG interagem directamente com as BD espaciais.\\
   \begin{figure}[!ht]%[htbp]
     \begin{center}
-    \includegraphics[width=0.5\textwidth ]{ices.png}
-      \caption[\tiny{O website interactivo do ICES usa uma BD espacial.}]{\tiny{O website interactivo do ICES usa uma BD espacial.}}
+    \includegraphics[width=0.5\textwidth ]{spatialite_gis.png}
+      \caption[\tiny{Adicionando um layer do SpatiaLite no QGIS.}]{\tiny{Adicionando um layer do SpatiaLite no QGIS.}}
       \label{frame} % so that one can \ref it elsewhere   
     \end{center}
   \end{figure}    
@@ -463,13 +462,13 @@ O nosso objectivo e calcular uma matriz de distancias, para saber que mercados d
 \begin{frame}
 \frametitle{Importar as Shapefiles}
 O Spatialite\_gui tem um interface amigavel para importar Shapefiles.\\
-\includegraphics[scale=0.3]{distance2.png}
+\includegraphics[scale=0.25]{distance2.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{Importar as Shapefiles (+)}
 A definicao do SRID e muito importante.\\
-\includegraphics[scale=0.5]{distance3.png}
+\includegraphics[scale=0.4]{distance3.png}
 \end{frame}
 
 \begin{frame}
@@ -483,32 +482,32 @@ Podiamos calcular as distancias em graus, mas e mais relevante faze-lo num siste
 \begin{frame}
 \frametitle{Adicionar uma Coluna Geometrica}
 Nao ha nada que nos impeca de ter duas colunas contendo geometria, em diferentes CRS!\\
-\includegraphics[scale=0.3]{distance5.png}
+\includegraphics[scale=0.25]{distance5.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{\textit{Clonar} a Geometria}
 Ao mesmo tempo que \textit{clonamos} a geometria, podemos reprojecta-la para \textit{Google Mercator}.\\
-\includegraphics[scale=0.3]{distance6.png}
+\includegraphics[scale=0.25]{distance6.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{Confirmar o Resultado}
 Podemos confirmar o SRID e a definicao da geometria em texto, com uma \textit{query} simples.\\
-\includegraphics[scale=0.3]{distance7.png}
+\includegraphics[scale=0.25]{distance7.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{Criando a Matriz de Distancias}
 Depois de criar a coluna com a geometria reprojectada nos dois layers, podemos proceder ao calculo das distancias lineares.
 A matriz de distancias e criada com uma \textit{query} que usa a funcao Distance().\\
-\includegraphics[scale=0.2]{distance8.png}
+\includegraphics[scale=0.25]{distance8.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{Guardar os resultados}
 Para tornar os resultados permanentes, podemos exporta-los para um ficheiro de texto (.csv); ou ainda criar uma \textit{View} ou uma tabela a partir desta \textit{query}.\\
-\includegraphics[scale=0.3]{distance11.png}
+\includegraphics[scale=0.25]{distance11.png}
 \end{frame}
 
 \begin{frame}
@@ -518,7 +517,7 @@ Visualizando os layers criados no Spatialite\_gis.\\
 %O QGIS ve as tabelas como dois layers!!! suporte directo em QGIS no core
 \end{frame}
 
-\section{NoSQL}
+%\section{http://nosql-database.org/}
 \begin{frame}
 \frametitle{NoSQL}
 \centering{
@@ -537,7 +536,7 @@ No modelo NoSQL a \textbf{habilidade de armazenar e recuperar grandes quantidade
   \end{itemize}
 \end{frame}
 
-\section{+}
+%\section{+}
 \begin{frame}
 \frametitle{+}
 
@@ -553,7 +552,7 @@ No modelo NoSQL a \textbf{habilidade de armazenar e recuperar grandes quantidade
 Obrigada pela vossa atencao!
 \end{frame}
 
-\section{Licenca}
+%\section{Licen\c{c}a}
 \begin{frame}
 \frametitle{Licenca}
 Copyright c 2013 Joana Simoes. Permission is granted

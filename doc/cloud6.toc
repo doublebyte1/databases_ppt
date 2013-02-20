@@ -1,22 +1,19 @@
 \beamer@endinputifotherversion {3.10pt}
-\beamer@sectionintoc {1}{Introducao}{3}{0}{1}
+\beamer@sectionintoc {1}{Introdu\c {c}\~{a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Conceitos Gerais de Base de Dados}{13}{0}{2}
 \beamer@subsectionintoc {2}{1}{BD como Modelos de Realidade}{13}{0}{2}
 \beamer@subsectionintoc {2}{2}{BD Relacionais}{19}{0}{2}
 \beamer@subsectionintoc {2}{3}{SQL}{30}{0}{2}
-\beamer@subsectionintoc {2}{4}{Sistemas de Gestao de Base de Dados}{36}{0}{2}
+\beamer@subsectionintoc {2}{4}{Sistemas de Gest\~{a}o de Base de Dados}{36}{0}{2}
 \beamer@sectionintoc {3}{Base de Dados Espaciais}{44}{0}{3}
-\beamer@subsectionintoc {3}{1}{O que sao as BD Espaciais}{44}{0}{3}
+\beamer@subsectionintoc {3}{1}{O que s\~{a}o as BD Espaciais}{44}{0}{3}
 \beamer@subsectionintoc {3}{2}{BD e SIG}{46}{0}{3}
-\beamer@subsectionintoc {3}{3}{Extensoes Espaciais}{50}{0}{3}
+\beamer@subsectionintoc {3}{3}{Extens\~{o}es Espaciais}{50}{0}{3}
 \beamer@sectionintoc {4}{Um Exemplo}{63}{0}{4}
 \beamer@subsectionintoc {4}{1}{https://sqlite.org/}{63}{0}{4}
 \beamer@subsectionintoc {4}{2}{SpatiaLite}{68}{0}{4}
 \beamer@subsectionintoc {4}{3}{http://www.gaia-gis.it/gaia-sins/}{79}{0}{4}
 \beamer@subsectionintoc {4}{4}{Demo}{85}{0}{4}
-\beamer@sectionintoc {5}{NoSQL}{96}{0}{5}
-\beamer@sectionintoc {6}{+}{100}{0}{6}
-\beamer@sectionintoc {7}{Licenca}{102}{0}{7}
 \contentsline {chapter}{GNU Free Documentation License}
 \contentsline {section}{1. APPLICABILITY AND DEFINITIONS}
 \contentsline {section}{2. VERBATIM COPYING}

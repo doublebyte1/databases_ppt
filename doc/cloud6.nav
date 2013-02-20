@@ -3,7 +3,7 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\sectionentry {1}{Introducao}{3}{Introducao}{0}}
+\headcommand {\sectionentry {1}{Introdu\c {c}\~{a}o}{3}{Introdu\c {c}\~{a}o}{0}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
 \headcommand {\slideentry {1}{0}{3}{3/5}{}{0}}
@@ -40,30 +40,30 @@
 \headcommand {\beamer@framepages {34}{34}}
 \headcommand {\slideentry {2}{3}{3}{35/35}{SQL}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{36}{Sistemas de Gestao de Base de Dados}}\headcommand {\beamer@subsectionpages {30}{35}}
-\headcommand {\slideentry {2}{4}{1}{36/43}{Sistemas de Gestao de Base de Dados}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{36}{Sistemas de Gest\~{a}o de Base de Dados}}\headcommand {\beamer@subsectionpages {30}{35}}
+\headcommand {\slideentry {2}{4}{1}{36/43}{Sistemas de Gest\~{a}o de Base de Dados}{0}}
 \headcommand {\beamer@framepages {36}{43}}
 \headcommand {\sectionentry {3}{Base de Dados Espaciais}{44}{Base de Dados Espaciais}{0}}
 \headcommand {\beamer@sectionpages {13}{43}}
 \headcommand {\beamer@subsectionpages {36}{43}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{44}{O que sao as BD Espaciais}}\headcommand {\beamer@subsectionpages {44}{43}}
-\headcommand {\slideentry {3}{1}{1}{44/45}{O que sao as BD Espaciais}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{44}{O que s\~{a}o as BD Espaciais}}\headcommand {\beamer@subsectionpages {44}{43}}
+\headcommand {\slideentry {3}{1}{1}{44/45}{O que s\~{a}o as BD Espaciais}{0}}
 \headcommand {\beamer@framepages {44}{45}}
 \headcommand {\beamer@subsectionentry {0}{3}{2}{46}{BD e SIG}}\headcommand {\beamer@subsectionpages {44}{45}}
 \headcommand {\slideentry {3}{2}{1}{46/47}{BD e SIG}{0}}
 \headcommand {\beamer@framepages {46}{47}}
 \headcommand {\slideentry {3}{2}{2}{48/49}{BD e SIG}{0}}
 \headcommand {\beamer@framepages {48}{49}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{50}{Extensoes Espaciais}}\headcommand {\beamer@subsectionpages {46}{49}}
-\headcommand {\slideentry {3}{3}{1}{50/51}{Extensoes Espaciais}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{50}{Extens\~{o}es Espaciais}}\headcommand {\beamer@subsectionpages {46}{49}}
+\headcommand {\slideentry {3}{3}{1}{50/51}{Extens\~{o}es Espaciais}{0}}
 \headcommand {\beamer@framepages {50}{51}}
-\headcommand {\slideentry {3}{3}{2}{52/57}{Extensoes Espaciais}{0}}
+\headcommand {\slideentry {3}{3}{2}{52/57}{Extens\~{o}es Espaciais}{0}}
 \headcommand {\beamer@framepages {52}{57}}
-\headcommand {\slideentry {3}{3}{3}{58/59}{Extensoes Espaciais}{0}}
+\headcommand {\slideentry {3}{3}{3}{58/59}{Extens\~{o}es Espaciais}{0}}
 \headcommand {\beamer@framepages {58}{59}}
-\headcommand {\slideentry {3}{3}{4}{60/61}{Extensoes Espaciais}{0}}
+\headcommand {\slideentry {3}{3}{4}{60/61}{Extens\~{o}es Espaciais}{0}}
 \headcommand {\beamer@framepages {60}{61}}
-\headcommand {\slideentry {3}{3}{5}{62/62}{Extensoes Espaciais}{0}}
+\headcommand {\slideentry {3}{3}{5}{62/62}{Extens\~{o}es Espaciais}{0}}
 \headcommand {\beamer@framepages {62}{62}}
 \headcommand {\sectionentry {4}{Um Exemplo}{63}{Um Exemplo}{0}}
 \headcommand {\beamer@sectionpages {44}{62}}
@@ -106,25 +106,16 @@
 \headcommand {\beamer@framepages {94}{94}}
 \headcommand {\slideentry {4}{4}{10}{95/95}{Demo}{0}}
 \headcommand {\beamer@framepages {95}{95}}
-\headcommand {\sectionentry {5}{NoSQL}{96}{NoSQL}{0}}
-\headcommand {\beamer@sectionpages {63}{95}}
-\headcommand {\beamer@subsectionpages {85}{95}}
-\headcommand {\slideentry {5}{0}{11}{96/97}{}{0}}
+\headcommand {\slideentry {4}{4}{11}{96/97}{Demo}{0}}
 \headcommand {\beamer@framepages {96}{97}}
-\headcommand {\slideentry {5}{0}{12}{98/99}{}{0}}
+\headcommand {\slideentry {4}{4}{12}{98/99}{Demo}{0}}
 \headcommand {\beamer@framepages {98}{99}}
-\headcommand {\sectionentry {6}{+}{100}{+}{0}}
-\headcommand {\beamer@sectionpages {96}{99}}
-\headcommand {\beamer@subsectionpages {96}{99}}
-\headcommand {\slideentry {6}{0}{13}{100/101}{}{0}}
+\headcommand {\slideentry {4}{4}{13}{100/101}{Demo}{0}}
 \headcommand {\beamer@framepages {100}{101}}
-\headcommand {\sectionentry {7}{Licenca}{102}{Licenca}{0}}
-\headcommand {\beamer@sectionpages {100}{101}}
-\headcommand {\beamer@subsectionpages {100}{101}}
-\headcommand {\slideentry {7}{0}{14}{102/102}{}{0}}
+\headcommand {\slideentry {4}{4}{14}{102/102}{Demo}{0}}
 \headcommand {\beamer@framepages {102}{102}}
-\headcommand {\beamer@partpages {1}{131}}
-\headcommand {\beamer@subsectionpages {102}{131}}
-\headcommand {\beamer@sectionpages {102}{131}}
-\headcommand {\beamer@documentpages {131}}
+\headcommand {\beamer@partpages {1}{129}}
+\headcommand {\beamer@subsectionpages {85}{129}}
+\headcommand {\beamer@sectionpages {63}{129}}
+\headcommand {\beamer@documentpages {129}}
 \headcommand {\def \inserttotalframenumber {46}}
