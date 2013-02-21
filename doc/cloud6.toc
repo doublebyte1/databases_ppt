@@ -6,7 +6,7 @@
 \beamer@subsectionintoc {2}{3}{SQL}{30}{0}{2}
 \beamer@subsectionintoc {2}{4}{Sistemas de Gest\~{a}o de Base de Dados}{36}{0}{2}
 \beamer@sectionintoc {3}{Base de Dados Espaciais}{44}{0}{3}
-\beamer@subsectionintoc {3}{1}{O que s\~{a}o as BD Espaciais}{44}{0}{3}
+\beamer@subsectionintoc {3}{1}{O que s\~{a}o BD Espaciais}{44}{0}{3}
 \beamer@subsectionintoc {3}{2}{BD e SIG}{46}{0}{3}
 \beamer@subsectionintoc {3}{3}{Extens\~{o}es Espaciais}{50}{0}{3}
 \beamer@sectionintoc {4}{Um Exemplo}{63}{0}{4}

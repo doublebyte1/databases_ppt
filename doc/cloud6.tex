@@ -49,8 +49,8 @@
   \begin{column}{7cm}
     \begin{itemize}
       \item<1-> PhD CASA, UCL: "An Agent-based Approach to Epidemics through GIS"
-      \item<2-> membro do grupo de ``Modelacao Geografica, Cidades e Ordenamento Do Territorio'', e-GEO
-      \item<3-> + 2 anos na FAO-UN, como consultora de diversos aspectos relacionados com Software (programacao, Bases de Dados e SIG)
+      \item<2-> membro do grupo de "Modela\c{c}\~{a}o Geogr\'{a}fica, Cidades e Ordenamento Do Territ\'{o}rio", e-GEO
+      \item<3-> + 2 anos na FAO-UN, como consultora de diversos aspectos relacionados com Software (programa\c{c}\~{a}o, Bases de Dados e SIG)
       \end{itemize}
   \end{column}
   \begin{column}{10cm}
@@ -61,26 +61,26 @@
 
 
 \begin{frame}
-\frametitle{Motivacao para Este Talk/Workshop}
+\frametitle{Motiva\c{c}\~{a}o para Este Talk/Workshop}
     \begin{itemize}
-      \item<2-> Partilha de conhecimentos, que poderao ser relevantes para pessoas que trabalhem com ``tecnologias espaciais``
-      \item<3-> Contributo para grupo o de ``Modelacao Geogr\'{a}fica, Cidades e Ordenamento Do Territorio''
-      \item<4-> Pretexto para reunir pessoas com interesse nesta area (``social networking'')
+      \item<2-> Partilha de conhecimentos, que poder\~{a}o ser relevantes para pessoas que trabalhem com ``tecnologias espaciais''
+      \item<3-> Contributo para grupo o de ''Modela\c{c}\~{a}o Geogr\'{a}fica, Cidades e Ordenamento Do Territ\'{o}rio``
+      \item<4-> Pretexto para reunir pessoas com interesse nesta \'{a}rea (\textit{social networking})
       \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{O que este Talk nao e...}
+\frametitle{O que este Talk n\~{a}o \'{e}...}
     \begin{itemize}
-      \item<2-> Nao e uma introducao ao SQL
-      \item<3-> Nao e um tutorial de SpatiaLite
+      \item<2-> N\~{a}o  \'{e} uma introdu\c{c}\~{a}o ao SQL.
+      \item<3-> N\~{a}o  \'{e} um tutorial de SpatiaLite.
       \end{itemize}
 \end{frame}
 
 \section{Conceitos Gerais de Base de Dados}
 \subsection{BD como Modelos de Realidade}
 \begin{frame}
-\frametitle{O que sao Bases de Dados...?}
+\frametitle{O que s\~{a}o Bases de Dados...?}
 \begin{overprint}
 \begin{figure}
 \includegraphics[scale=0.4]{dilbert_db.png}
@@ -89,12 +89,12 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{O que sao Bases de Dados...? (+)}
+\frametitle{O que s\~{a}o Bases de Dados...? (+)}
 \begin{columns}
   \begin{column}{7cm}
     \begin{itemize}
-      \item<2-> As BD tratam de organizar a informacao;
-      \item<3-> Exemplos de BD: arquivo de uma biblioteca, folha de calculo ou ficheiro de texto;
+      \item<2-> As BD servem para organizar informa\c{c}\~{a}o;
+      \item<3-> Exemplos de BD: arquivo de uma biblioteca, folha de c\'{a}lculo ou ficheiro de texto;
     \end{itemize}
   \end{column}
   \begin{column}{10cm}
@@ -104,17 +104,17 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{O que sao Bases de Dados...? (+)}
+\frametitle{O que s\~{a}o Bases de Dados...? (+)}
 \begin{overprint}
 \begin{figure}
-\includegraphics[scale=0.4]{mayas.jpg}
+\includegraphics[scale=0.3]{mayas.jpg}
 \end{figure}
-Calendario Maya.\\
+Calend\'{a}rio Maya.\\
 \end{overprint}
 \end{frame}
 
 \begin{frame}
-\frametitle{O que sao Bases de Dados...? (+)}
+\frametitle{O que s\~{a}o Bases de Dados...? (+)}
 \begin{overprint}
 Os computadores/Internet geram um volume de dados muito grande e necessitamos de ferramentas adequadas para tirar partido deles.\\
 \begin{figure}
@@ -128,18 +128,14 @@ Os computadores/Internet geram um volume de dados muito grande e necessitamos de
 \begin{frame}
 \frametitle{BD Relacionais}
 O modelo relacional foi formulado por Edgar F. Codd (1969/1970?).\\
-Este modelo representa a realidade atraves de: \textbf{tabelas}, \textbf{colunas} e \textbf{linhas}.
-%\begin{columns}
-  %\begin{column}{5cm}
+Este modelo representa a realidade atrav\'{e}s de: \textbf{tabelas}, \textbf{linhas} e \textbf{colunas}.
   \begin{itemize}
-  \item<2-> Os dados sao armazenados em \textbf{tabelas}.
-  \item<3-> As tabelas sao organizadas por \textbf{colunas}; cada coluna guarda um \emph{tipo} de dados (inteiro, real, caracter, BLOB,...).  
-  \item<4-> Os dados correspondentes a uma \textit{instancia} unica da tabela sao armazenados numa \textbf{linha}.
-  \item<5-> As tabelas tipicamente apresentam \textbf{chaves} - uma ou mais colunas que identificam unicamente essa linha dentro da tabela.
-  \item<6-> Para tornar o acesso a tabela mais rapido, e definido um \textbf{indice}. Um indice possibilita buscas rapidas na tabela, baseadas numa ou mais colunas (chave).
+  \item<2-> Os dados s\~{a}o armazenados em \textbf{tabelas}.
+  \item<3-> Os dados correspondentes a uma \textit{inst\^{a}ncia} unica da tabela sao armazenados numa \textbf{linha}.
+  \item<4-> As linhas s\~{a}o organizadas por \textbf{colunas}; cada coluna guarda um \emph{tipo} de dados (inteiro, real, caracter, BLOB,...).    
+  \item<5-> As tabelas t\'{i}picamente apresentam \textbf{chaves} - uma ou mais colunas que identificam unicamente essa linha dentro da tabela.
+  \item<6-> Para tornar o acesso a tabela mais r\'{a}pido, \'{e} definido um \textbf{\'{i}ndice}. Um \'{i}ndice possibilita buscas r\'{a}pidas na tabela, baseadas numa ou mais colunas (chave).
   \end{itemize}
-  %\end{column}
-%\end{columns}
 \end{frame}
 
 \begin{frame}
@@ -147,7 +143,7 @@ Este modelo representa a realidade atraves de: \textbf{tabelas}, \textbf{colunas
   \begin{figure}
   \includegraphics[scale=0.3]{table.png}
   \end{figure}
-Relacao: conjunto de registos com os mesmos atributos (i.e.: mesmo dominio).\\
+Rela\c{c}\~{a}o: conjunto de registos com os mesmos atributos (\textit{i.e.}: mesmo dom\'{i}nio).\\
 %Relacoes base e relacoes derivadas    
   \begin{figure}
   \includegraphics[scale=0.4]{350px-Relational_database_terms.png}
@@ -156,7 +152,7 @@ Relacao: conjunto de registos com os mesmos atributos (i.e.: mesmo dominio).\\
 
 \begin{frame}
 \frametitle{BD Relacionais (+)}
-Relacoes entre tabelas:\\
+Rela\c{c}\~{o}es entre tabelas:\\
 \begin{figure}
 \includegraphics[scale=0.5]{sample_status_originb}
 \end{figure}
@@ -164,21 +160,21 @@ Relacoes entre tabelas:\\
 
 \begin{frame}
 \frametitle{BD Relacionais (+)}
-O objectivo do modelo relacional e possibilitar um metodo declarativo para especificar dados e \textit{queries}.
+O objectivo do modelo relacional \'{e} possibilitar um m\'{e}todo declarativo para especificar dados e \textit{queries}.
   \begin{enumerate}
-  \item<2-> Os utilizadores declaram que informacao contem a BD e que informacao querem extrair dela.
-  \item<3-> O software encarrega-se de descrever as estruturas de dados para armazenamento e os procedimentos de recuperacao dos dados para responder as \textit{queries}.
+  \item<2-> Os utilizadores declaram que informa\c{c}\~{a}o cont\'{e}m a BD e que informa\c{c}\~{a}o querem extrair dela.
+  \item<3-> O software encarrega-se de descrever as estruturas de dados para armazenamento, e dos procedimentos de recupera\c{c}\~{a}o dos dados para responder \'{a}s \textit{queries}.
   \end{enumerate}
 \end{frame}
 
 \subsection{SQL}
 \begin{frame}
 \frametitle{SQL}
-A maior parte das implementacoes do modelo relacional usam o \textbf{SQL} como linguagem de definicao de dados e de \textit{queries}.
+A maior parte das implementa\c{c}\~{o}es do modelo relacional usam o \textbf{SQL} como linguagem de defini\c{c}\~{a}o de dados e de \textit{queries}.
   \begin{itemize}
   \item<2-> Linguagem estruturada de pesquisa (\textbf{S}tructured \textbf{Q}uery \textbf{L}anguage).
-  \item<3-> Embora nao subscreva a 100\% o modelo proposto por Todd (1970) tornou-se a linguagem de BD mais utilizada.
-  \item<4-> Originalmente baseada na algebra relacional, foi extendendo o seu ambito (e.g.: insercao de dados, pesquisa, actualizacao, remocao, etc)
+  \item<3-> Embora nao subscreva a 100\% o modelo proposto por Todd (1970), tornou-se a linguagem de BD mais utilizada.
+  \item<4-> Originalmente baseada na \'{a}lgebra relacional, foi extendendo o seu \^{a}mbito (e.g.: inser\c{c}\~{a}o de dados, pesquisa, actualiza\c{c}\~{a}o, remo\c{c}\~{a}o, etc)
   \end{itemize}
 \end{frame}
 
@@ -236,29 +232,29 @@ WHERE      (id_cell = 53) AND (To_LS =
 \subsection{Sistemas de Gest\~{a}o de Base de Dados}
 \begin{frame}
 \frametitle{SGBD}
-Um \textbf{S}istema de \textbf{G}estao De \textbf{B}ase de \textbf{D}ados e o software que controla o armazenamento,
-recuperacao, remocao, seguranca e integridade dos dados dentro da BD.\\
+Um \textbf{S}istema de \textbf{G}est\~{a}o De \textbf{B}ase de \textbf{D}ados e o software que controla o armazenamento,
+recupera\c{c}\~{a}o, remo\c{c}\~{a}o, seguran\c{c}a e integridade dos dados dentro da BD.\\
 Algumas vantagens dos SGBDR:
 \begin{itemize}
-\item<2-> Reduzir a redundancia;%Bd centralizada; utilizacao de chaves estrangeiras; relacionado com: consistencia
-\item<3-> Independencia dos dados;%se a BD estiver separada da aplicacao, a aplicacao nao necessita de saber nada sobre o armazenamento interno, manipulacao dos dados
+\item<2-> Reduzir a redund\^{a}ncia;%Bd centralizada; utilizacao de chaves estrangeiras; relacionado com: consistencia
+\item<3-> Independ\^{e}ncia dos dados;%se a BD estiver separada da aplicacao, a aplicacao nao necessita de saber nada sobre o armazenamento interno, manipulacao dos dados
 \item<4-> Assegurar a integridade dos dados;%ao activar certos mecanismos (por exemplo chaves primarias) a BD vai assegurar-se de que nao existem registos duplicados
 \item<5-> Partilha de dados;%varias aplicacoes podem partilhar a mm BD; relacionado com: CONCORRENCIA
-\item<7-> Recuperacao a partir de uma falha;%multiplos updates podem ser agrupados numa unica transaccao logica; o update fisico segue a compleicao da transaccao logica; desta forma, assegura-se que numa falha, a BD nao vai ficar num estado inconsistente
-\item<8-> Seguranca e privacidade;%implementa sistema de utilizadores e roles, protegidos com passwords, permitindo varios niveis de acesso aos dados
+\item<7-> Recupera\c{c}\~{a}o a partir de uma falha;%multiplos updates podem ser agrupados numa unica transaccao logica; o update fisico segue a compleicao da transaccao logica; desta forma, assegura-se que numa falha, a BD nao vai ficar num estado inconsistente
+\item<8-> Seguran\c{c}a e privacidade;%implementa sistema de utilizadores e roles, protegidos com passwords, permitindo varios niveis de acesso aos dados
 \end{itemize}
 \end{frame}
 
 \section{Base de Dados Espaciais}
 
-\subsection{O que s\~{a}o as BD Espaciais} 
+\subsection{O que s\~{a}o BD Espaciais} 
 \begin{frame}
-\frametitle{O que sao as BD Espaciais}
+\frametitle{O que s\~{a}o BD Espaciais}
 \begin{columns}
   \begin{column}{7cm}
     \begin{itemize}
-      \item<1-> Se as BD sao um conjunto integrado de informacao sobre um determinado tema, as BD espaciais contem dados \textbf{espaciais}, sobre um determinado tema e numa determinada \textbf{dimensao espacial}.
-      \item<2-> BD espaciais != BD Geograficas
+      \item<1-> Se as BD s\~{a}o um conjunto integrado de informa\c{c}\~{a}o sobre um determinado tema, as BD espaciais contem dados \textbf{espaciais}, sobre um determinado tema e numa determinada \textbf{dimensao espacial}.
+      \item<2-> BD espaciais != BD Geogr\'{a}ficas
       \end{itemize}
   \end{column}
   \begin{column}{10cm}
@@ -270,9 +266,9 @@ Algumas vantagens dos SGBDR:
 \subsection{BD e SIG} 
 \begin{frame}
 \frametitle{BD e SIG}
-Historicamente os SIG sempre incluiram BD (modelos de dados).
+Hist\'{o}ricamente os SIG sempre incluiram BD (modelos de dados).
     \begin{itemize}
-      \item<2-> A primeira geracao de SIG tinha representacoes de dados em ficheiros fisicos (e.g.: Shapefile).      
+      \item<2-> A primeira gera\c{c}\~{a}o de SIG tinha representa\c{c}\~{o}es de dados em ficheiros f\'{i}sicos (\textit{e.g.}: Shapefile).      
       \includegraphics[scale=0.2]{att_table.png}
       \end{itemize}
 \end{frame}
@@ -280,20 +276,20 @@ Historicamente os SIG sempre incluiram BD (modelos de dados).
 \begin{frame}
 \frametitle{BD e SIG (+)}
     \begin{itemize}
-      \item<1-> Com a generalizacao dos SGBDR, alguns fabricantes de SIG Desktop (e.g.: ESRI, Mapinfo) comecaram a desenvolver produtos de \textit{midleware}, que usavam os SGBDR como repositorios de dados (segunda geracao).
+      \item<1-> Com a generaliza\c{c}\~{a}o dos SGBDR, alguns fabricantes de SIG Desktop (e.g.: ESRI, Mapinfo) come\c{c}aram a desenvolver produtos de \textit{midleware}, que usavam os SGBDR como reposit\'{o}rios de dados (''segunda gera\c{c}\~{a}o de SIG``).
       %beneficiavam das vantagens dos SGBD e a inteligencia espacial estava no midleware
-      \item<2-> A ``terceira geracao de SIG'' nasce da motivacao de aproveitar a 100\% as capacidades dos SGBDR e de criar uma certa independencia de APIs proprietarias.
-      Isto foi alcancado \textit{movendo} a gestao primaria dos dados para a BD e \textit{expandindo} a sintaxe do SQL.
+      \item<2-> A ``terceira gera\c{c}\~{a}o de SIG'' nasce da motiva\c{c}\~{a}o de aproveitar a 100\% as capacidades dos SGBDR e de criar uma certa independ\^{e}ncia de APIs propriet\'{a}rias.
+      Isto foi alcan\c{c}ado \textit{movendo} a gest\~{a}o prim\'{a}ria dos dados para a BD e \textit{expandindo} a sintaxe do SQL.
       \end{itemize}
 \end{frame}
 
 \subsection{Extens\~{o}es Espaciais}
 \begin{frame}
-\frametitle{SGBD com Extensao Espacial}
-Uma BD espacial e uma BD que \textit{compreende} informacao espacial, em adicao a outros tipos de informacao (numerico, texto, binario, etc).
-Podemos considera-a como uma \textit{extensao} de uma BD \textit{tradicional}, adicionando a capacidade de armazenamento de
-\textit{features} geometricas (e.g.: pontos, linhas, poligons) e uma serie de operacoes que podemos processar sobre estas \textit{features} 
-(e.g.: \textit{buffering}, interseccao). De facto muitas BD espaciais sao distribuidas como extensoes de BD relacionais existentes.
+\frametitle{SGBD com Extens\~{a}o Espacial}
+Uma BD espacial \'{e} uma BD que \textit{compreende} informa\c{c}\~{a}o espacial, em adi\c{c}\~{a}o a outros tipos de informa\c{c}\~{a}o (inteiros, caracteres, bin\'{a}rio, etc).
+Podemos consider\'{a}-a como uma \textit{extens\~{a}o} de uma BD \textit{tradicional}, adicionando a capacidade de armazenamento de
+\textit{features} geom\'{e}tricas (e.g.: pontos, linhas, pol\'{i}gonos) e uma s\'{e}rie de opera\c{c}\~{o}es que podemos processar sobre estas \textit{features} 
+(e.g.: \textit{buffering}, intersec\c{c}\~{a}o). De facto muitas BD espaciais s\~{a}o distribu\'{i}das como extens\~{o}es de BD relacionais existentes.
     \begin{itemize}
       \item<2-> PostGIS \textit{extende} o PostGres SQL;
       \item<2-> MySQL Spatial \textit{extende} o MySQL;
@@ -306,43 +302,43 @@ Podemos considera-a como uma \textit{extensao} de uma BD \textit{tradicional}, a
 
 \begin{frame}
 \frametitle{Pesquisas Espaciais}
-\textbf{Indices Espaciais} sao indices que optimizam as pesquisas espaciais (\textit{e.g.}: Quadtree).
+\textbf{Indices Espaciais} s\~{a}o indices que optimizam as pesquisas espaciais (\textit{e.g.}: \textit{Quadtree}).
 %organizacao que se dedica a regular os standards geoespaciais e de localizacao
 O \textbf{Open Geospatial Consortium} (OGC) suporta os seguintes tipos de pesquisas espaciais:
     \begin{itemize}
-      \item<2-> \textbf{Medicoes Espaciais} (\textit{e.g.}: encontrar a distancia entre dois pontos, area de um poligono, etc);
-      \item<3-> \textbf{Funcoes Espaciais}: Modificar \textit{features} existentes para criar novas (\textit{e.g.}: \textit{buffer}, interseccao, etc);
-      \item<4-> \textbf{Predicados Espaciais}: permitir pesquisas de resultado booleano (\textit{e.g.}: \textit{existe um campo de petroleo dentro de uma distancia de uma area protegida que pretendemos implementar?});
+      \item<2-> \textbf{Medi\c{c}\~{o}es Espaciais} (\textit{e.g.}: encontrar a dist\^{a}ncia entre dois pontos, \'{a}rea de um pol\'{i}gono, etc);
+      \item<3-> \textbf{Fun\c{c}\~{o}es Espaciais}: Modificar \textit{features} existentes para criar novas (\textit{e.g.}: \textit{buffer}, intersec\c{c}\~{a}o, etc);
+      \item<4-> \textbf{Predicados Espaciais}: permitir pesquisas de resultado booleano (\textit{e.g.}: \textit{existe um campo de petr\'{o}leo dentro de uma dist\^{a}ncia de uma \'{a}rea protegida que pretendemos implementar?});
       \item<5-> \textbf{Construtores}: criar novas \textit{features} com uma expressao de SQL (\textit{e.g.}: criar linhas pela especificacao dos vertices);
       \item<6-> \textbf{Funcoes de Observacao}: pesquisas que retornam informacao especifica sobre uma \textit{feature} (\textit{e.g.}: o centroide de um poligono);
     \end{itemize}  
 \end{frame}
 
 \begin{frame}
-\frametitle{Porque usar SGBD com extensoes Espaciais?}
+\frametitle{Porque usar SGBD com extens\~{o}es Espaciais?}
 Apresentam todas as vantagens de um SGBD \textit{tradicional}:\\
     \begin{itemize}
-      \item<2-> Eficiencia de armazenamento;
+      \item<2-> Efici\^{e}ncia de armazenamento;
       \item<2-> Funcionalidade de pesquisa;
       \item<2-> acesso concorrente;
-      \item<2-> modelo de seguranca;
+      \item<2-> modelo de seguran\c{c}a;
       \item<2-> ...      
     \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Porque usar SGBD com extensoes Espaciais? (+)}
-Hoje em dia a maior parte dos software de SIG interagem directamente com as BD espaciais.\\
+\frametitle{Porque usar SGBD com extens\~{o}es Espaciais? (+)}
+Hoje em dia a maior parte dos software de SIG interagem directamente com BD espaciais.\\
   \begin{figure}[!ht]%[htbp]
     \begin{center}
-    \includegraphics[width=0.5\textwidth ]{spatialite_gis.png}
-      \caption[\tiny{Adicionando um layer do SpatiaLite no QGIS.}]{\tiny{Adicionando um layer do SpatiaLite no QGIS.}}
+    \includegraphics[width=0.6\textwidth ]{spatialite_layer.png}
+      \caption[\tiny{Adicionando um layer do SpatiaLite, no QGIS.}]{\tiny{Adicionando um layer do SpatiaLite, no QGIS.}}
       \label{frame} % so that one can \ref it elsewhere   
     \end{center}
   \end{figure}    
 
     \begin{itemize}
-      \item<2-> Nao ha nenhum motivo para nao utilizar os SGBD com extensoes espaciais como sistema de armazenamento e gestao da informacao geografica!
+      \item<2-> N\~{a}o h\'{a} nenhum motivo para \textbf{n\~{a}o} utilizar os SGBD com extens\~{o}es espaciais, como sistema de armazenamento e gest\~{a}o da informa\c{c}\~{a}o geogr\'{a}fica!
     \end{itemize}  
 \end{frame}
 
@@ -359,14 +355,14 @@ Hoje em dia a maior parte dos software de SIG interagem directamente com as BD e
 \subsection{https://sqlite.org/}
 \begin{frame}
 \frametitle{SQLite e SpatiaLite}
-\textbf{SpatiaLite} e a extensao espacial do \textbf{SQLite}.\\
-O SQLite e o \textit{engine} de BD mais utilizado no mundo. O codigo esta no dominio publico.\\
+\textbf{SpatiaLite} \'{e} a extens\~{a}o espacial do \textbf{SQLite}.\\
+O SQLite \'{e} o motor de BD mais utilizado no mundo. O c\'{o}digo esta no dom\'{i}nio p\'{u}blico.\\
 \begin{columns}
   \begin{column}{7cm}
     \begin{itemize}
       \item<2-> auto-contido;
       \item<3-> sem servidor;
-      \item<4-> sem configuracao;
+      \item<4-> sem configura\c{c}\~{a}o;
       \item<5-> transaccional;      
     \end{itemize}    
   \end{column}
@@ -382,27 +378,27 @@ O SQLite e o \textit{engine} de BD mais utilizado no mundo. O codigo esta no dom
 \subsection{SpatiaLite}
 \begin{frame}
 \frametitle{LibspatiaLite}
-O SpatiaLite e uma biblioteca \textit{livre e de codigo aberto}, simples, e \textit{leve}.\\
+O SpatiaLite \'{e} uma biblioteca \textit{livre e de c\'{o}digo aberto}, simples, e \textit{leve}.\\
 Algumas vantagens:
     \begin{itemize}
       \item<2-> A BD completa cabe num ficheiro (sem limites de tamanho);
-      \item<3-> O ficheiro de BD e portavel para diferentes Sistemas Operativos;
-      \item<4-> Nao requer instalacao/configuracao;
-      \item<5-> Implementacao standard de SQL (quase completa SQL-92).      
-      \item<6-> Modelo de tres licencas (uma para cada gosto!).      
+      \item<3-> O ficheiro de BD \'{e} port\'{a}vel para diferentes Sistemas Operativos;
+      \item<4-> Nao requer instala\c{c}\~{a}o/configura\c{c}\~{a}o;
+      \item<5-> Implementa\c{c}\~{a}o standard de SQL (quase completa SQL-92).      
+      \item<6-> Modelo de tr\^{e}s licen\c{c}as (uma para cada ``gosto''!).      
     \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{FOSS}
-A definicao de Software livre foi publicada pela \textit{Free Software Foundation} (FSF) em 1985, como sendo software que respeita quatro liberdades fundamentais:
+A defini\c{c}\~{a}o de Software livre foi publicada pela \textit{Free Software Foundation} (FSF) em 1985, como sendo software que respeita quatro liberdades fundamentais:
 \begin{columns}
   \begin{column}{7cm}
     \begin{itemize}
       \item<2-> Liberdade de executar o programa, com qualquer objectivo;
-      \item<3-> Liberdade de estudar o codigo e modifica-lo, se assim o desejar;
-      \item<4-> Liberdade de redistribuir copias;
-      \item<5-> Liberdade de modificar o programa, e distribuir a versao modificada;      
+      \item<3-> Liberdade de estudar o c\'{o}digo e modific\'{a}-lo, se assim o desejar;
+      \item<4-> Liberdade de redistribuir c\'{o}pias;
+      \item<5-> Liberdade de modificar o programa, e distribuir a vers\~{a}o modificada;      
     \end{itemize}    
   \end{column}
   %as liberdades 2 e 5 fazem com que um programa livre tenha de ser necessariamente open source
@@ -418,17 +414,17 @@ A definicao de Software livre foi publicada pela \textit{Free Software Foundatio
 \subsection{http://www.gaia-gis.it/gaia-sins/}
 \begin{frame}
 \frametitle{Spatial Is Not Special}
-O SpatiaLite e um dos projectos {Gaia-SINS}
+O SpatiaLite \'{e} um dos projectos {Gaia-SINS}
     \begin{itemize}
       \item<2-> \textbf{ReadOSM}: biblioteca para extrair dados do formato OpenStreet Map;
-      \item<3-> \textbf{Spatialite-tools}: coleccao de ferramentas de linha de comando (CLI) que suportam o SpatiaLite (\textit{e.g.}:cliente, import/export)
+      \item<3-> \textbf{Spatialite-tools}: colec\c{c}\~{a}o de ferramentas de linha de comando (CLI) que suportam o SpatiaLite (\textit{e.g.}:cliente, import/export)
     \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Spatial Is Not Special (+)}
     \begin{itemize}
-      \item<1-> \textbf{Spatialite-gui}: \textit{interface} grafico para utilizar o SpatiaLite;
+      \item<1-> \textbf{Spatialite-gui}: \textit{interface} gr\'{a}fico para utilizar o SpatiaLite;
     \end{itemize}
   \includegraphics[scale=0.4]{spatialite_gui.png}        
 \end{frame}
@@ -444,44 +440,44 @@ O SpatiaLite e um dos projectos {Gaia-SINS}
 \begin{frame}
 \frametitle{Spatial Is Not Special (+)}
     \begin{itemize}
-      \item<1-> \textbf{Spatialite-gis}: SIG minimal, construido sobre o SpatiaLite e o RasterLite;
+      \item<1-> \textbf{Spatialite-gis}: SIG minimal, constru\'{i}do sobre o SpatiaLite e o RasterLite;
     \end{itemize}
   \includegraphics[scale=0.4]{spatialite_gis.png}        
 \end{frame}
 
 \subsection{Demo}
 \begin{frame}
-\frametitle{Solucionando um problema Geografico}
+\frametitle{Solucionando um problema Geogr\'{a}fico}
 \small{
-\textit{Use Case}: Temos uma serie de portos de pesca, na area do Benin, e uma serie de mercados, onde potencialmente se podem vender as capturas.
-O nosso objectivo e calcular uma matriz de distancias, para saber que mercados distam mais proximos de cada porto. Os portos e os mercados estao armazenados em Shapefiles (WGS84).
+\textit{Use Case}: Temos uma s\'{e}rie de portos de pesca, na area do Benin, e uma s\'{e}rie de mercados, onde potencialmente se podem vender as capturas.
+O nosso objectivo e calcular uma matriz de dist\^{a}ncias, para saber que mercados distam mais pr\'{o}ximos de cada porto. Os portos e os mercados estao armazenados em Shapefiles (WGS84).
 }
-\includegraphics[scale=0.2]{distances1.png}
+\includegraphics[scale=0.3]{distances1.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{Importar as Shapefiles}
-O Spatialite\_gui tem um interface amigavel para importar Shapefiles.\\
+O spatialite\_gui tem um interface amig\'{a}vel para importar Shapefiles.\\
 \includegraphics[scale=0.25]{distance2.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{Importar as Shapefiles (+)}
-A definicao do SRID e muito importante.\\
+A defini\c{c}\~{a}o do SRID \'{e} muito importante.\\
 \includegraphics[scale=0.4]{distance3.png}
 \end{frame}
 
 \begin{frame}
-\frametitle{Analise do Problema}
-Podiamos calcular as distancias em graus, mas e mais relevante faze-lo num sistema com unidades lineares (\textit{e.g.: metros}).\\
+\frametitle{An\'{a}lise do Problema}
+Podiamos calcular as dist\^{a}ncias em graus, mas \'{e} mais relevante faze-lo num sistema com unidades lineares (\textit{e.g.: metros}).\\
 \vspace{1cm}
 \pause
 \huge \textit{Como faze-lo sem reprojectar o layer?}
 \end{frame}
 
 \begin{frame}
-\frametitle{Adicionar uma Coluna Geometrica}
-Nao ha nada que nos impeca de ter duas colunas contendo geometria, em diferentes CRS!\\
+\frametitle{Adicionar uma Coluna Geom\'{e}trica}
+N\~{a}o h\'{a} nada que nos impe\c{c}a de ter duas colunas contendo geometria, em diferentes CRS!\\
 \includegraphics[scale=0.25]{distance5.png}
 \end{frame}
 
@@ -493,20 +489,20 @@ Ao mesmo tempo que \textit{clonamos} a geometria, podemos reprojecta-la para \te
 
 \begin{frame}
 \frametitle{Confirmar o Resultado}
-Podemos confirmar o SRID e a definicao da geometria em texto, com uma \textit{query} simples.\\
+Podemos confirmar o SRID e a defini\c{c}\~{a}o da geometria em texto, com uma \textit{query} simples.\\
 \includegraphics[scale=0.25]{distance7.png}
 \end{frame}
 
 \begin{frame}
-\frametitle{Criando a Matriz de Distancias}
-Depois de criar a coluna com a geometria reprojectada nos dois layers, podemos proceder ao calculo das distancias lineares.
-A matriz de distancias e criada com uma \textit{query} que usa a funcao Distance().\\
+\frametitle{Criando a Matriz de Dist\^{a}ncias}
+Depois de criar a coluna com a geometria reprojectada nos dois layers, podemos proceder ao c\'{a}lculo das dist\^{a}ncias lineares.
+A matriz de dist\^{a}ncias \'{e} criada com uma \textit{query} que usa a fun\c{c}\~{a}o \textit{Distance()}.\\
 \includegraphics[scale=0.25]{distance8.png}
 \end{frame}
 
 \begin{frame}
 \frametitle{Guardar os resultados}
-Para tornar os resultados permanentes, podemos exporta-los para um ficheiro de texto (.csv); ou ainda criar uma \textit{View} ou uma tabela a partir desta \textit{query}.\\
+Para tornar os resultados permanentes, podemos export\'{a}-los para um ficheiro de texto (.csv); ou ainda criar uma \textit{View} ou uma tabela a partir desta \textit{query}.\\
 \includegraphics[scale=0.25]{distance11.png}
 \end{frame}
 
@@ -523,16 +519,16 @@ Visualizando os layers criados no Spatialite\_gis.\\
 \centering{
 \includegraphics[scale=0.4]{nosql.jpeg}}
 \pause
-O modelo relacional e um \textit{top-down} approach, que se baseia em ideias \textit{fortes} sobre os dados (\textit{schema}). A realidade muitas vezes e outra...\\
+O modelo relacional \'{e} um \textit{top-down} approach, que se baseia em ideias \textit{fortes} sobre os dados (\textit{schema}). A realidade muitas vezes \'{e} outra...\\
 \end{frame}
 
 \begin{frame}
 \frametitle{NoSQL (+)}
-No modelo NoSQL a \textbf{habilidade de armazenar e recuperar grandes quantidades de dados e mais importante do que as relacoes entre os elementos}. Algumas vantagens:
+No modelo NoSQL a \textbf{habilidade de armazenar e recuperar grandes quantidades de dados \'{e} mais importante do que as rela\c{c}\~{o}es entre os elementos}. Algumas vantagens:
   \begin{itemize}
-      \item<2-> Adaptam-se bem ao modelo orientado para o objecto (\textit{e.g.}: trees).
-      \item<2-> Sao desenhados como sistemas distribuidos, e por isso \textit{crescem} muito bem. %nao precisamos de incrementar o hardware, mas apenas adicionar mais nos
-      \item<2-> Suportam a replicacao de dados, para assegurar a disponibilidade e a recuperacao em caso de desastre.
+      \item<2-> Adaptam-se bem ao modelo orientado para o objecto (\textit{e.g.}: \textit{trees}).
+      \item<2-> S\~{a}o desenhados como sistemas distribuidos, e por isso \textit{crescem} muito bem. %nao precisamos de incrementar o hardware, mas apenas adicionar mais nos
+      \item<2-> Suportam a replica\c{c}\~{a}o de dados, para assegurar a disponibilidade e a recupera\c{c}\~{a}o em caso de desastre.
   \end{itemize}
 \end{frame}
 
@@ -544,7 +540,7 @@ No modelo NoSQL a \textbf{habilidade de armazenar e recuperar grandes quantidade
 \item<1-> \url{http://mgcotunl.wordpress.com/}
 \item<1-> Revista da ACCU (Associacao de Programadores de C e C++): \url{http://accu.org/}
 \item<1-> \url{http://doublebyte.net}
-\item<1-> Esta apresentacao esta publicada com licenca GNU FDL
+\item<1-> Esta apresenta\c{c}\~{a}o est\'{a} publicada com licen\c{c}a GNU FDL
 \end{itemize}
 \pause
 \vspace{1cm}
@@ -554,7 +550,7 @@ Obrigada pela vossa atencao!
 
 %\section{Licen\c{c}a}
 \begin{frame}
-\frametitle{Licenca}
+\frametitle{Licen\c{c}a}
 Copyright c 2013 Joana Simoes. Permission is granted
 to copy, distribute and/or modify this document under
 the terms of the GNU Free Documentation License,

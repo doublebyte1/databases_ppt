@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.23)  19 FEB 2013 22:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.23)  21 FEB 2013 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1019,14 +1019,14 @@ Overfull \hbox (119.50148pt too wide) detected at line 60
 ] [12
 
 ]
-<dilbert_db.png, id=235, 602.25pt x 219.82124pt>
+<dilbert_db.png, id=236, 602.25pt x 219.82124pt>
 File: dilbert_db.png Graphic file (type png)
  <use dilbert_db.png>
 Package pdftex.def Info: dilbert_db.png used on input line 89.
 (pdftex.def)             Requested size: 240.89572pt x 87.92693pt.
  [13
 
- <./dilbert_db.png>] <informationoverloadcartoon.jpg, id=250, 329.23pt x 271.01
+ <./dilbert_db.png>] <informationoverloadcartoon.jpg, id=251, 329.23pt x 271.01
 25pt>
 File: informationoverloadcartoon.jpg Graphic file (type jpg)
 
@@ -1067,18 +1067,14 @@ Overfull \hbox (119.50148pt too wide) detected at line 104
 
 [16
 
-] <mayas.jpg, id=291, 636.3775pt x 476.78125pt>
+] <mayas.jpg, id=292, 636.3775pt x 476.78125pt>
 File: mayas.jpg Graphic file (type jpg)
  <use mayas.jpg>
 Package pdftex.def Info: mayas.jpg used on input line 114.
-(pdftex.def)             Requested size: 254.5465pt x 190.7091pt.
+(pdftex.def)             Requested size: 190.91472pt x 143.03548pt.
+ [17
 
-Overfull \vbox (26.57478pt too high) detected at line 114
- []
-
-[17
-
- <./mayas.jpg>] <Big-Data-on-cloud.jpg, id=305, 401.5pt x 308.15125pt>
+ <./mayas.jpg>] <Big-Data-on-cloud.jpg, id=306, 401.5pt x 308.15125pt>
 File: Big-Data-on-cloud.jpg Graphic file (type jpg)
 
 <use Big-Data-on-cloud.jpg>
@@ -1091,37 +1087,37 @@ Overfull \vbox (15.65314pt too high) detected at line 125
 [18
 
  <./Big-Data-on-cloud.jpg>]
-Overfull \vbox (3.40324pt too high) detected at line 143
+Overfull \vbox (3.40324pt too high) detected at line 139
  []
 
 [19
 
 ]
-Overfull \vbox (3.40324pt too high) detected at line 143
+Overfull \vbox (3.40324pt too high) detected at line 139
  []
 
 [20
 
 ]
-Overfull \vbox (3.40324pt too high) detected at line 143
+Overfull \vbox (3.40324pt too high) detected at line 139
  []
 
 [21
 
 ]
-Overfull \vbox (3.40324pt too high) detected at line 143
+Overfull \vbox (3.40324pt too high) detected at line 139
  []
 
 [22
 
 ]
-Overfull \vbox (3.40324pt too high) detected at line 143
+Overfull \vbox (3.40324pt too high) detected at line 139
  []
 
 [23
 
 ]
-Overfull \vbox (3.40324pt too high) detected at line 143
+Overfull \vbox (3.40324pt too high) detected at line 139
  []
 
 [24
@@ -1129,7 +1125,7 @@ Overfull \vbox (3.40324pt too high) detected at line 143
 ] <table.png, id=398, 632.3625pt x 351.3125pt>
 File: table.png Graphic file (type png)
  <use table.png>
-Package pdftex.def Info: table.png used on input line 155.
+Package pdftex.def Info: table.png used on input line 151.
 (pdftex.def)             Requested size: 189.7102pt x 105.39455pt.
 
 <350px-Relational_database_terms.png, id=399, 351.3125pt x 164.615pt>
@@ -1137,10 +1133,10 @@ File: 350px-Relational_database_terms.png Graphic file (type png)
 
 <use 350px-Relational_database_terms.png>
 Package pdftex.def Info: 350px-Relational_database_terms.png used on input line
- 155.
+ 151.
 (pdftex.def)             Requested size: 140.5225pt x 65.84482pt.
 
-Overfull \vbox (22.84253pt too high) detected at line 155
+Overfull \vbox (22.84253pt too high) detected at line 151
  []
 
 [25
@@ -1150,15 +1146,15 @@ Overfull \vbox (22.84253pt too high) detected at line 155
 File: sample_status_originb.png Graphic file (type png)
 
 <use sample_status_originb.png>
-Package pdftex.def Info: sample_status_originb.png used on input line 163.
+Package pdftex.def Info: sample_status_originb.png used on input line 159.
 (pdftex.def)             Requested size: 308.27596pt x 173.14644pt.
 
-Overfull \hbox (0.98608pt too wide) in paragraph at lines 163--163
+Overfull \hbox (0.98608pt too wide) in paragraph at lines 159--159
  [] 
  []
 
 
-Overfull \vbox (9.01212pt too high) detected at line 163
+Overfull \vbox (9.01212pt too high) detected at line 159
  []
 
 [26
@@ -1206,7 +1202,7 @@ LaTeX Font Warning: Font shape `OML/lmss/m/n' undefined
 \openout4 = `cloud6.vrb'.
 
  (./cloud6.vrb)
-Overfull \vbox (22.76569pt too high) detected at line 234
+Overfull \vbox (22.76569pt too high) detected at line 230
  []
 
 [35
@@ -1231,20 +1227,20 @@ Overfull \vbox (22.76569pt too high) detected at line 234
 <wired.png, id=657, 803.0pt x 602.25pt>
 File: wired.png Graphic file (type png)
  <use wired.png>
-Package pdftex.def Info: wired.png used on input line 268.
+Package pdftex.def Info: wired.png used on input line 264.
 (pdftex.def)             Requested size: 321.1943pt x 240.89572pt.
 
-Overfull \hbox (36.66675pt too wide) in paragraph at lines 268--268
+Overfull \hbox (36.66675pt too wide) in paragraph at lines 264--264
 [][]  
  []
 
 
-Overfull \hbox (119.50148pt too wide) detected at line 268
+Overfull \hbox (119.50148pt too wide) detected at line 264
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 
-Overfull \vbox (37.56139pt too high) detected at line 268
+Overfull \vbox (37.56139pt too high) detected at line 264
  []
 
 [44
@@ -1252,20 +1248,20 @@ Overfull \vbox (37.56139pt too high) detected at line 268
  <./wired.png>]
 File: wired.png Graphic file (type png)
  <use wired.png>
-Package pdftex.def Info: wired.png used on input line 268.
+Package pdftex.def Info: wired.png used on input line 264.
 (pdftex.def)             Requested size: 321.1943pt x 240.89572pt.
 
-Overfull \hbox (36.66675pt too wide) in paragraph at lines 268--268
+Overfull \hbox (36.66675pt too wide) in paragraph at lines 264--264
 [][]  
  []
 
 
-Overfull \hbox (119.50148pt too wide) detected at line 268
+Overfull \hbox (119.50148pt too wide) detected at line 264
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 
-Overfull \vbox (37.56139pt too high) detected at line 268
+Overfull \vbox (37.56139pt too high) detected at line 264
  []
 
 [45
@@ -1273,7 +1269,7 @@ Overfull \vbox (37.56139pt too high) detected at line 268
 ] <att_table.png, id=682, 1192.455pt x 705.63625pt>
 File: att_table.png Graphic file (type png)
  <use att_table.png>
-Package pdftex.def Info: att_table.png used on input line 278.
+Package pdftex.def Info: att_table.png used on input line 274.
 (pdftex.def)             Requested size: 238.48677pt x 141.12474pt.
 
 [46
@@ -1281,7 +1277,7 @@ Package pdftex.def Info: att_table.png used on input line 278.
  <./att_table.png>]
 File: att_table.png Graphic file (type png)
  <use att_table.png>
-Package pdftex.def Info: att_table.png used on input line 278.
+Package pdftex.def Info: att_table.png used on input line 274.
 (pdftex.def)             Requested size: 238.48677pt x 141.12474pt.
  [47
 
@@ -1294,37 +1290,37 @@ Package pdftex.def Info: att_table.png used on input line 278.
 ] [51
 
 ]
-Overfull \vbox (17.00325pt too high) detected at line 319
+Overfull \vbox (17.00325pt too high) detected at line 315
  []
 
 [52
 
 ]
-Overfull \vbox (17.00325pt too high) detected at line 319
+Overfull \vbox (17.00325pt too high) detected at line 315
  []
 
 [53
 
 ]
-Overfull \vbox (17.00325pt too high) detected at line 319
+Overfull \vbox (17.00325pt too high) detected at line 315
  []
 
 [54
 
 ]
-Overfull \vbox (17.00325pt too high) detected at line 319
+Overfull \vbox (17.00325pt too high) detected at line 315
  []
 
 [55
 
 ]
-Overfull \vbox (17.00325pt too high) detected at line 319
+Overfull \vbox (17.00325pt too high) detected at line 315
  []
 
 [56
 
 ]
-Overfull \vbox (17.00325pt too high) detected at line 319
+Overfull \vbox (17.00325pt too high) detected at line 315
  []
 
 [57
@@ -1333,25 +1329,25 @@ Overfull \vbox (17.00325pt too high) detected at line 319
 
 ] [59
 
-] <spatialite_gis.png, id=854, 602.25pt x 338.76563pt>
-File: spatialite_gis.png Graphic file (type png)
+] <spatialite_layer.png, id=854, 1028.34187pt x 557.83406pt>
+File: spatialite_layer.png Graphic file (type png)
 
-<use spatialite_gis.png>
-Package pdftex.def Info: spatialite_gis.png used on input line 347.
-(pdftex.def)             Requested size: 153.64493pt x 86.42285pt.
+<use spatialite_layer.png>
+Package pdftex.def Info: spatialite_layer.png used on input line 343.
+(pdftex.def)             Requested size: 184.3758pt x 100.01425pt.
 
-Overfull \vbox (1.89125pt too high) detected at line 347
+Overfull \vbox (15.48265pt too high) detected at line 343
  []
 
 [60
 
- <./spatialite_gis.png>]
-File: spatialite_gis.png Graphic file (type png)
- <use spatialite_gis.png>
-Package pdftex.def Info: spatialite_gis.png used on input line 347.
-(pdftex.def)             Requested size: 153.64493pt x 86.42285pt.
+ <./spatialite_layer.png>]
+File: spatialite_layer.png Graphic file (type png)
+ <use spatialite_layer.png>
+Package pdftex.def Info: spatialite_layer.png used on input line 343.
+(pdftex.def)             Requested size: 184.3758pt x 100.01425pt.
 
-Overfull \vbox (1.89125pt too high) detected at line 347
+Overfull \vbox (15.48265pt too high) detected at line 343
  []
 
 [61
@@ -1359,7 +1355,7 @@ Overfull \vbox (1.89125pt too high) detected at line 347
 ] <coffee_talk.jpg, id=882, 120.45pt x 120.45pt>
 File: coffee_talk.jpg Graphic file (type jpg)
  <use coffee_talk.jpg>
-Package pdftex.def Info: coffee_talk.jpg used on input line 356.
+Package pdftex.def Info: coffee_talk.jpg used on input line 352.
 (pdftex.def)             Requested size: 153.64493pt x 153.659pt.
 
 [62
@@ -1368,14 +1364,14 @@ Package pdftex.def Info: coffee_talk.jpg used on input line 356.
 File: sqlite.png Graphic file (type png)
 
 <use sqlite.png>
-Package pdftex.def Info: sqlite.png used on input line 379.
+Package pdftex.def Info: sqlite.png used on input line 375.
 (pdftex.def)             Requested size: 66.248pt x 30.41385pt.
 File: spatialite.png Graphic file (type png)
  <use spatialite.png>
-Package pdftex.def Info: spatialite.png used on input line 379.
+Package pdftex.def Info: spatialite.png used on input line 375.
 (pdftex.def)             Requested size: 69.56395pt x 61.53348pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 379
+Overfull \hbox (119.50148pt too wide) detected at line 375
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1384,14 +1380,14 @@ Overfull \hbox (119.50148pt too wide) detected at line 379
  <./sqlite.png>]
 File: sqlite.png Graphic file (type png)
  <use sqlite.png>
-Package pdftex.def Info: sqlite.png used on input line 379.
+Package pdftex.def Info: sqlite.png used on input line 375.
 (pdftex.def)             Requested size: 66.248pt x 30.41385pt.
 File: spatialite.png Graphic file (type png)
  <use spatialite.png>
-Package pdftex.def Info: spatialite.png used on input line 379.
+Package pdftex.def Info: spatialite.png used on input line 375.
 (pdftex.def)             Requested size: 69.56395pt x 61.53348pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 379
+Overfull \hbox (119.50148pt too wide) detected at line 375
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1400,14 +1396,14 @@ Overfull \hbox (119.50148pt too wide) detected at line 379
 ]
 File: sqlite.png Graphic file (type png)
  <use sqlite.png>
-Package pdftex.def Info: sqlite.png used on input line 379.
+Package pdftex.def Info: sqlite.png used on input line 375.
 (pdftex.def)             Requested size: 66.248pt x 30.41385pt.
 File: spatialite.png Graphic file (type png)
  <use spatialite.png>
-Package pdftex.def Info: spatialite.png used on input line 379.
+Package pdftex.def Info: spatialite.png used on input line 375.
 (pdftex.def)             Requested size: 69.56395pt x 61.53348pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 379
+Overfull \hbox (119.50148pt too wide) detected at line 375
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1416,14 +1412,14 @@ Overfull \hbox (119.50148pt too wide) detected at line 379
 ]
 File: sqlite.png Graphic file (type png)
  <use sqlite.png>
-Package pdftex.def Info: sqlite.png used on input line 379.
+Package pdftex.def Info: sqlite.png used on input line 375.
 (pdftex.def)             Requested size: 66.248pt x 30.41385pt.
 File: spatialite.png Graphic file (type png)
  <use spatialite.png>
-Package pdftex.def Info: spatialite.png used on input line 379.
+Package pdftex.def Info: spatialite.png used on input line 375.
 (pdftex.def)             Requested size: 69.56395pt x 61.53348pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 379
+Overfull \hbox (119.50148pt too wide) detected at line 375
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1432,14 +1428,14 @@ Overfull \hbox (119.50148pt too wide) detected at line 379
 ]
 File: sqlite.png Graphic file (type png)
  <use sqlite.png>
-Package pdftex.def Info: sqlite.png used on input line 379.
+Package pdftex.def Info: sqlite.png used on input line 375.
 (pdftex.def)             Requested size: 66.248pt x 30.41385pt.
 File: spatialite.png Graphic file (type png)
  <use spatialite.png>
-Package pdftex.def Info: spatialite.png used on input line 379.
+Package pdftex.def Info: spatialite.png used on input line 375.
 (pdftex.def)             Requested size: 69.56395pt x 61.53348pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 379
+Overfull \hbox (119.50148pt too wide) detected at line 375
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1461,10 +1457,10 @@ Overfull \hbox (119.50148pt too wide) detected at line 379
 <stallman.jpg, id=1042, 622.325pt x 466.74374pt>
 File: stallman.jpg Graphic file (type jpg)
  <use stallman.jpg>
-Package pdftex.def Info: stallman.jpg used on input line 416.
+Package pdftex.def Info: stallman.jpg used on input line 412.
 (pdftex.def)             Requested size: 186.69893pt x 140.0242pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 416
+Overfull \hbox (119.50148pt too wide) detected at line 412
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1473,10 +1469,10 @@ Overfull \hbox (119.50148pt too wide) detected at line 416
  <./stallman.jpg>]
 File: stallman.jpg Graphic file (type jpg)
  <use stallman.jpg>
-Package pdftex.def Info: stallman.jpg used on input line 416.
+Package pdftex.def Info: stallman.jpg used on input line 412.
 (pdftex.def)             Requested size: 186.69893pt x 140.0242pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 416
+Overfull \hbox (119.50148pt too wide) detected at line 412
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1485,10 +1481,10 @@ Overfull \hbox (119.50148pt too wide) detected at line 416
 ]
 File: stallman.jpg Graphic file (type jpg)
  <use stallman.jpg>
-Package pdftex.def Info: stallman.jpg used on input line 416.
+Package pdftex.def Info: stallman.jpg used on input line 412.
 (pdftex.def)             Requested size: 186.69893pt x 140.0242pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 416
+Overfull \hbox (119.50148pt too wide) detected at line 412
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1497,10 +1493,10 @@ Overfull \hbox (119.50148pt too wide) detected at line 416
 ]
 File: stallman.jpg Graphic file (type jpg)
  <use stallman.jpg>
-Package pdftex.def Info: stallman.jpg used on input line 416.
+Package pdftex.def Info: stallman.jpg used on input line 412.
 (pdftex.def)             Requested size: 186.69893pt x 140.0242pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 416
+Overfull \hbox (119.50148pt too wide) detected at line 412
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1509,10 +1505,10 @@ Overfull \hbox (119.50148pt too wide) detected at line 416
 ]
 File: stallman.jpg Graphic file (type jpg)
  <use stallman.jpg>
-Package pdftex.def Info: stallman.jpg used on input line 416.
+Package pdftex.def Info: stallman.jpg used on input line 412.
 (pdftex.def)             Requested size: 186.69893pt x 140.0242pt.
 
-Overfull \hbox (119.50148pt too wide) detected at line 416
+Overfull \hbox (119.50148pt too wide) detected at line 412
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1528,7 +1524,7 @@ Overfull \hbox (119.50148pt too wide) detected at line 416
 File: spatialite_gui.png Graphic file (type png)
 
 <use spatialite_gui.png>
-Package pdftex.def Info: spatialite_gui.png used on input line 434.
+Package pdftex.def Info: spatialite_gui.png used on input line 430.
 (pdftex.def)             Requested size: 240.89572pt x 135.50385pt.
  [82
 
@@ -1536,126 +1532,130 @@ Package pdftex.def Info: spatialite_gui.png used on input line 434.
 <rasterlite.png, id=1163, 602.25pt x 338.76563pt>
 File: rasterlite.png Graphic file (type png)
  <use rasterlite.png>
-Package pdftex.def Info: rasterlite.png used on input line 442.
+Package pdftex.def Info: rasterlite.png used on input line 438.
 (pdftex.def)             Requested size: 240.89572pt x 135.50385pt.
  [83
 
- <./rasterlite.png>]
+ <./rasterlite.png>] <spatialite_gis.png, id=1178, 602.25pt x 338.76563pt>
 File: spatialite_gis.png Graphic file (type png)
- <use spatialite_gis.png>
-Package pdftex.def Info: spatialite_gis.png used on input line 450.
+
+<use spatialite_gis.png>
+Package pdftex.def Info: spatialite_gis.png used on input line 446.
 (pdftex.def)             Requested size: 240.89572pt x 135.50385pt.
  [84
 
-]
+ <./spatialite_gis.png>]
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 460.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 456.
 
 
-<distances1.png, id=1192, 655.69969pt x 477.28313pt>
+<distances1.png, id=1194, 655.69969pt x 477.28313pt>
 File: distances1.png Graphic file (type png)
  <use distances1.png>
-Package pdftex.def Info: distances1.png used on input line 460.
-(pdftex.def)             Requested size: 131.1376pt x 95.45493pt.
+Package pdftex.def Info: distances1.png used on input line 456.
+(pdftex.def)             Requested size: 196.71143pt x 143.18604pt.
+
+Overfull \vbox (10.35173pt too high) detected at line 456
+ []
 
 [85
 
- <./distances1.png>] <distance2.png, id=1206, 1028.34187pt x 557.83406pt>
+ <./distances1.png>] <distance2.png, id=1208, 1028.34187pt x 557.83406pt>
 File: distance2.png Graphic file (type png)
 
 <use distance2.png>
-Package pdftex.def Info: distance2.png used on input line 466.
+Package pdftex.def Info: distance2.png used on input line 462.
 (pdftex.def)             Requested size: 257.08484pt x 139.45816pt.
  [86
 
  <./distance2.png>]
-<distance3.png, id=1221, 435.12563pt x 353.82187pt>
+<distance3.png, id=1223, 435.12563pt x 353.82187pt>
 File: distance3.png Graphic file (type png)
  <use distance3.png>
-Package pdftex.def Info: distance3.png used on input line 472.
+Package pdftex.def Info: distance3.png used on input line 468.
 (pdftex.def)             Requested size: 174.04716pt x 141.52623pt.
 
 [87
 
  <./distance3.png>]
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <20.74> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 480.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 476.
 
  [88
 
 ] [89
 
 ]
-<distance5.png, id=1263, 1028.34187pt x 557.83406pt>
+<distance5.png, id=1265, 1028.34187pt x 557.83406pt>
 File: distance5.png Graphic file (type png)
  <use distance5.png>
-Package pdftex.def Info: distance5.png used on input line 486.
+Package pdftex.def Info: distance5.png used on input line 482.
 (pdftex.def)             Requested size: 257.08484pt x 139.45816pt.
 
 [90
 
- <./distance5.png>] <distance6.png, id=1278, 1028.34187pt x 557.83406pt>
+ <./distance5.png>] <distance6.png, id=1280, 1028.34187pt x 557.83406pt>
 File: distance6.png Graphic file (type png)
 
 <use distance6.png>
-Package pdftex.def Info: distance6.png used on input line 492.
+Package pdftex.def Info: distance6.png used on input line 488.
 (pdftex.def)             Requested size: 257.08484pt x 139.45816pt.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 492.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 488.
 
  [91
 
  <./distance6.png>]
-<distance7.png, id=1295, 1028.34187pt x 557.83406pt>
+<distance7.png, id=1297, 1028.34187pt x 557.83406pt>
 File: distance7.png Graphic file (type png)
  <use distance7.png>
-Package pdftex.def Info: distance7.png used on input line 498.
+Package pdftex.def Info: distance7.png used on input line 494.
 (pdftex.def)             Requested size: 257.08484pt x 139.45816pt.
 
 [92
 
- <./distance7.png>] <distance8.png, id=1311, 1028.34187pt x 557.83406pt>
+ <./distance7.png>] <distance8.png, id=1313, 1028.34187pt x 557.83406pt>
 File: distance8.png Graphic file (type png)
 
 <use distance8.png>
-Package pdftex.def Info: distance8.png used on input line 505.
+Package pdftex.def Info: distance8.png used on input line 501.
 (pdftex.def)             Requested size: 257.08484pt x 139.45816pt.
  [93
 
  <./distance8.png>]
-<distance11.png, id=1326, 1024.57782pt x 555.57562pt>
+<distance11.png, id=1328, 1024.57782pt x 555.57562pt>
 File: distance11.png Graphic file (type png)
  <use distance11.png>
-Package pdftex.def Info: distance11.png used on input line 511.
+Package pdftex.def Info: distance11.png used on input line 507.
 (pdftex.def)             Requested size: 256.14383pt x 138.89355pt.
 
 [94
 
- <./distance11.png>] <distance13.png, id=1340, 1028.34187pt x 557.83406pt>
+ <./distance11.png>] <distance13.png, id=1342, 1028.34187pt x 557.83406pt>
 File: distance13.png Graphic file (type png)
 
 <use distance13.png>
-Package pdftex.def Info: distance13.png used on input line 518.
+Package pdftex.def Info: distance13.png used on input line 514.
 (pdftex.def)             Requested size: 308.50494pt x 167.3515pt.
 
-Overfull \hbox (1.21507pt too wide) in paragraph at lines 518--518
+Overfull \hbox (1.21507pt too wide) in paragraph at lines 514--514
 [][]  
  []
 
 [95
 
- <./distance13.png>] <nosql.jpeg, id=1355, 222.8325pt x 204.765pt>
+ <./distance13.png>] <nosql.jpeg, id=1357, 222.8325pt x 204.765pt>
 File: nosql.jpeg Graphic file (type jpg)
 
 <use nosql.jpeg>
-Package pdftex.def Info: nosql.jpeg used on input line 527.
+Package pdftex.def Info: nosql.jpeg used on input line 523.
 (pdftex.def)             Requested size: 89.13141pt x 81.90454pt.
  [96
 
  <./nosql.jpeg>]
 File: nosql.jpeg Graphic file (type jpg)
  <use nosql.jpeg>
-Package pdftex.def Info: nosql.jpeg used on input line 527.
+Package pdftex.def Info: nosql.jpeg used on input line 523.
 (pdftex.def)             Requested size: 89.13141pt x 81.90454pt.
  [97
 
@@ -1664,7 +1664,7 @@ Package pdftex.def Info: nosql.jpeg used on input line 527.
 ] [99
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 553
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 549
 .
 
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
@@ -1729,24 +1729,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@snm=\write8
 \openout8 = `cloud6.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 570.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 570.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 566.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 566.
  (./cloud6.aux (./fdl-1.3.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 570.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 570.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 566.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 566.
 Package rerunfilecheck Info: File `cloud6.out' has not changed.
-(rerunfilecheck)             Checksum: B58C12E7C958F44CA4CE99A573784F5D;985.
+(rerunfilecheck)             Checksum: 934DCA4C22AE35BF25215AC04136D11B;982.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 570.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 566.
  ) 
 Here is how much of TeX's memory you used:
- 17814 strings out of 495059
- 323636 string characters out of 3182029
- 471098 words of memory out of 3000000
- 20255 multiletter control sequences out of 15000+200000
+ 17825 strings out of 495059
+ 323804 string characters out of 3182029
+ 471142 words of memory out of 3000000
+ 20265 multiletter control sequences out of 15000+200000
  63853 words of font info for 54 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,21n,62p,395b,1433s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1759,10 +1759,10 @@ b></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on cloud6.pdf (129 pages, 4279460 bytes).
+Output written on cloud6.pdf (129 pages, 4472487 bytes).
 PDF statistics:
- 1917 PDF objects out of 2073 (max. 8388607)
+ 1919 PDF objects out of 2073 (max. 8388607)
  1698 compressed objects within 17 object streams
  275 named destinations out of 1000 (max. 500000)
- 330 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 335 words of extra memory for PDF output out of 10000 (max. 10000000)
 
