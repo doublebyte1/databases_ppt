@@ -1,0 +1,62 @@
+SELECT AddGeometryColumn('markets', 'google', 3857, 'MULTIPOINT', 2);
+
+UPDATE markets SET google = Transform(geometry, 3857);
+
+SELECT AsText(geometry), Srid(geometry), AsText(google), Srid(google) FROM markets
+
+SELECT AddGeometryColumn('benin_ports', 'google', 3857, 'POINT', 2);
+
+UPDATE benin_ports SET google = Transform(geometry, 3857);
+
+SELECT AsText(geometry), Srid(geometry), AsText(google), Srid(google) FROM benin_ports;
+
+SELECT A.PORT_NAME, B.NAME, DISTANCE(A.Geometry,B.Geometry) as dist_deg 
+,DISTANCE(A.google,B.google)/1000 as dist_km from markets as B,
+Benin_ports as A ORDER BY PORT_NAME ,dist_deg ASC;
+
+SELECT AddGeometryColumn('benin_ports', 'google', 3857, 'POINT', 2);
+PRAGMA table_info(markets);
+
+create view vdistance as
+SELECT A.PORT_NAME, B.NAME, DISTANCE(A.Geometry,B.Geometry) as dist_deg 
+,DISTANCE(A.google,B.google)/1000 as dist_km from markets as B,
+Benin_ports as A ORDER BY PORT_NAME ,dist_deg ASC;
+
+create table tdistance as
+SELECT A.PORT_NAME, B.NAME, DISTANCE(A.Geometry,B.Geometry) as dist_deg 
+,DISTANCE(A.google,B.google)/1000 as dist_km from markets as B,
+Benin_ports as A ORDER BY PORT_NAME ,dist_deg ASC;
+
+Create table DIST_MATRIX AS
+SELECT A.PORT_NAME, B.city, DISTANCE(A.Geometry,B.Geometry) as dist_deg 
+,DISTANCE(A.google,B.google)/1000 as dist_km from selected_markets as B,
+big_gulf_ports as A ORDER BY PORT_NAME ,dist_deg ASC;
+
+
+select port_name, city, min(dist_km) from dist_matrix group by port_name order by port_name asc
+
+CREATE TABLE shortest_paths (id INTEGER PRIMARY KEY AUTOINCREMENT
+      	, port varchar(10), market varchar(10), geometry BLOB NOT NULL); 
+
+CREATE TABLE shortest_paths (
+      	 port varchar(10), market varchar(10), geometry BLOB NOT NULL, dist DOUBLE); 
+
+
+SELECT port_name,city,  INTO shortest_paths FROM 
+
+
+SELECT AS TEXT('LINESTRING('+ SELECT AsText(selected_markets.geometry) from selected_markets + ',' +
+ SELECT AsText(big_gulf_ports.geometry) from big_gulf_ports + ')');
+
+SELECT GeomFromText('LINESTRING(' || X(selected_markets.geometry) || ' ' || Y(selected_markets.geometry)|| ', ' ||
+ X(big_gulf_ports.geometry) || ' ' ||  Y(big_gulf_ports.geometry) || ')') from selected_markets , big_gulf_ports
+
+INSERT  INTO shortest_paths 
+SELECT DIST_MATRIX.port_name,DIST_MATRIX.city
+,GeomFromText('LINESTRING(' || X(selected_markets.geometry) || ' ' || Y(selected_markets.geometry)|| ', ' ||
+ X(big_gulf_ports.geometry) || ' ' ||  Y(big_gulf_ports.geometry) || ')')
+,min(dist_km) FROM
+  DIST_MATRIX, selected_markets, big_gulf_ports WHERE selected_markets.city=DIST_MATRIX.city 
+AND big_gulf_ports.port_name=DIST_MATRIX.PORT_NAME
+group by DIST_MATRIX.port_name order by DIST_MATRIX.port_name asc
+
